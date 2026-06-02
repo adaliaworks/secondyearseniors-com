@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Second Year Seniors — Dispatches</title>
+    <link>https://secondyearseniors.com/</link>
+    <atom:link href="https://secondyearseniors.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Notes on the idea, the data, and the colleges to watch — the case for turning failing campuses into homes for the Peak 65 generation.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Jun 2026 13:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Why this site exists</title>
+      <link>https://secondyearseniors.com/#dispatches</link>
+      <guid isPermaLink="false">sys-dispatch-001-why-this-site-exists</guid>
+      <pubDate>Tue, 02 Jun 2026 13:00:00 GMT</pubDate>
+      <description>Two of the biggest stories of our time are usually told as separate tragedies. Stand them next to each other and they look less like two problems and more like a key and a lock.</description>
+      <content:encoded><![CDATA[
+        <p>I keep waiting for someone smarter to say this, and they haven't, so here goes.</p>
+        <p>We're about to spend the 2020s and 2030s doing two sad things at once: mourning the colleges that close, and worrying about where tens of millions of older Americans will live. I don't understand why we're not allowed to notice that one is the answer to the other.</p>
+        <p>I'm not angry about it. I'm just puzzled. The buildings are right there. The need is right there. The model already exists in 80-plus places. The only thing missing is for the people who run colleges and the people who run senior living to be in the same conversation — and for the rest of us to decide this is normal and good and overdue.</p>
+        <p>So this is me saying it out loud, in the hope it catches. If you've read this far, you're now in on the secret. Pass it on.</p>
+        <p>— Second Year Seniors</p>
+      ]]></content:encoded>
+    </item>
+  </channel>
+</rss>
