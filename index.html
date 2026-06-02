@@ -1,3 +1,666 @@
-<html>
-    Hello Wordl!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Second Year Seniors — Everyone deserves a senior year</title>
+<meta name="description" content="Colleges are running out of students. A record number of Americans need somewhere to grow old well. One of these has empty buildings. The other needs a place to live. We've been warehousing our old people — and we're about to bulldoze the cure.">
+<meta name="author" content="Adalia Works">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Second Year Seniors">
+<meta property="og:description" content="We've been warehousing our old people. And we're about to bulldoze the cure. The case for turning failing campuses into homes for the Peak 65 generation.">
+<meta property="og:site_name" content="Second Year Seniors">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4ecda;
+    --paper-deep:#ece0c7;
+    --ink:#1f3a2e;
+    --ink-2:#2b4a3b;
+    --ink-soft:#42604f;
+    --gold:#b07d22;
+    --gold-bright:#d6a23a;
+    --oxblood:#7c2d2d;
+    --line:rgba(31,58,46,.20);
+    --line-soft:rgba(31,58,46,.12);
+    --shadow:rgba(31,58,46,.16);
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:72px;}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Newsreader",Georgia,serif;font-optical-sizing:auto;
+    font-size:clamp(17px,1.05vw + 13px,20px);line-height:1.62;
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  /* paper grain */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  h1,h2,h3,.display{font-family:"Fraunces",Georgia,serif;font-weight:900;line-height:1.02;letter-spacing:-.01em;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,64px);}
+  .eyebrow{
+    font-family:"Fraunces",serif;font-weight:600;font-size:.78rem;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--gold);display:inline-block;margin:0 0 1.1rem;
+  }
+  .eyebrow::before{content:"❖  ";color:var(--gold);}
+  section{padding:clamp(64px,8vw,120px) 0;position:relative;}
+  .rule{height:0;border:0;border-top:1.5px solid var(--ink);max-width:var(--maxw);margin:0 auto;opacity:.9;}
+  .rule.double{border-top:1.5px solid var(--ink);position:relative;}
+  .rule.double::after{content:"";display:block;border-top:1.5px solid var(--ink);margin-top:4px;}
+
+  /* NAV */
+  header.nav{
+    position:sticky;top:0;z-index:1000;background:rgba(244,236,218,.86);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  }
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;
+    max-width:var(--maxw);margin:0 auto;padding:14px clamp(20px,5vw,64px);}
+  .brand{font-family:"Fraunces",serif;font-weight:900;font-size:1.18rem;letter-spacing:-.02em;text-decoration:none;color:var(--ink);white-space:nowrap;}
+  .brand span{color:var(--gold);}
+  .nav-links{display:flex;gap:clamp(10px,1.6vw,26px);align-items:center;}
+  .nav-links a{
+    text-decoration:none;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;
+    font-family:"Fraunces",serif;font-weight:600;color:var(--ink-soft);transition:color .2s;white-space:nowrap;
+  }
+  .nav-links a:hover{color:var(--gold);}
+  .nav-toggle{display:none;background:none;border:1.5px solid var(--ink);border-radius:3px;padding:6px 9px;cursor:pointer;font-family:"Fraunces",serif;font-weight:600;color:var(--ink);}
+  @media(max-width:860px){
+    .nav-links{position:fixed;inset:58px 0 auto 0;background:var(--paper);flex-direction:column;
+      gap:0;padding:8px 0;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:transform .35s ease;}
+    .nav-links.open{transform:translateY(0);}
+    .nav-links a{padding:14px clamp(20px,5vw,64px);width:100%;border-top:1px solid var(--line-soft);}
+    .nav-toggle{display:inline-block;}
+  }
+
+  /* BUTTONS */
+  .btn{
+    display:inline-block;text-decoration:none;font-family:"Fraunces",serif;font-weight:600;
+    font-size:.95rem;letter-spacing:.02em;padding:.82em 1.5em;border-radius:2px;cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease, background .2s;border:1.5px solid var(--ink);
+  }
+  .btn-primary{background:var(--ink);color:var(--paper);box-shadow:4px 4px 0 var(--gold);}
+  .btn-primary:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--gold);}
+  .btn-ghost{background:transparent;color:var(--ink);}
+  .btn-ghost:hover{background:var(--ink);color:var(--paper);transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--gold);}
+  .btn-row{display:flex;gap:16px;flex-wrap:wrap;margin-top:2.2rem;}
+
+  /* HERO */
+  .hero{padding-top:clamp(56px,7vw,96px);padding-bottom:clamp(48px,6vw,84px);position:relative;}
+  .hero h1{font-size:clamp(2.6rem,7.2vw,5.4rem);max-width:16ch;margin:.2em 0 .1em;}
+  .hero h1 .kill{color:var(--oxblood);font-style:italic;}
+  .hero .lede{font-size:clamp(1.15rem,1.6vw,1.45rem);max-width:34ch;margin:1.6rem 0 0;color:var(--ink-2);}
+  .hero .three{margin:1.4rem 0 0;max-width:40ch;color:var(--ink-soft);}
+  .tagline{
+    display:inline-block;margin-top:2rem;font-family:"Fraunces",serif;font-style:italic;font-weight:600;
+    font-size:clamp(1.2rem,2vw,1.6rem);color:var(--ink);border-bottom:3px solid var(--gold);padding-bottom:2px;
+  }
+  .pennant{position:absolute;right:clamp(-30px,2vw,40px);top:clamp(40px,6vw,90px);width:clamp(120px,18vw,230px);opacity:.9;transform:rotate(6deg);pointer-events:none;}
+  @media(max-width:760px){.pennant{display:none;}}
+
+  /* anim */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:none;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(26px);}to{opacity:1;transform:none;}}
+  .stagger>*{opacity:0;animation:fadeUp .8s ease forwards;}
+  .stagger>*:nth-child(1){animation-delay:.05s;}
+  .stagger>*:nth-child(2){animation-delay:.18s;}
+  .stagger>*:nth-child(3){animation-delay:.32s;}
+  .stagger>*:nth-child(4){animation-delay:.46s;}
+  .stagger>*:nth-child(5){animation-delay:.6s;}
+  @media(prefers-reduced-motion:reduce){.reveal,.stagger>*{opacity:1!important;transform:none!important;animation:none!important;}}
+
+  /* COLLISION / STAT CARDS */
+  .section-head{max-width:30ch;}
+  .section-head h2{font-size:clamp(1.9rem,4vw,3.1rem);margin:.1em 0 .4em;}
+  .section-head p.kick{font-size:1.15rem;color:var(--ink-soft);font-style:italic;}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,34px);margin:clamp(34px,5vw,56px) 0;}
+  @media(max-width:680px){.stats{grid-template-columns:1fr;}}
+  .stat{
+    background:var(--paper);border:1.5px solid var(--ink);border-radius:3px;padding:clamp(22px,3vw,34px);
+    box-shadow:6px 6px 0 var(--ink);position:relative;
+  }
+  .stat .num{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(2.8rem,7vw,4.6rem);line-height:.95;color:var(--ink);letter-spacing:-.03em;}
+  .stat .num small{font-size:.32em;font-weight:600;letter-spacing:0;display:inline;}
+  .stat .cap{font-weight:600;font-size:1.05rem;margin:.5rem 0 .35rem;display:block;}
+  .stat .src{font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;font-family:"Fraunces",serif;font-weight:600;}
+  .stat .src a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);}
+  .stat .src a:hover{color:var(--ink);border-color:var(--ink);}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px);margin-top:1.5rem;}
+  @media(max-width:760px){.two-col{grid-template-columns:1fr;}}
+  .crisis h3{font-size:1.4rem;color:var(--oxblood);margin:0 0 .5rem;}
+  .crisis ul{padding-left:1.1em;margin:.6rem 0 0;}
+  .crisis li{margin:.55rem 0;}
+  .crisis a, .prose a, .obj a, .about a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);}
+  .crisis a:hover, .prose a:hover, .obj a:hover, .about a:hover{color:var(--ink);border-color:var(--ink);}
+
+  /* DARK BANDS */
+  .band-dark{background:var(--ink);color:var(--paper);}
+  .band-dark .eyebrow{color:var(--gold-bright);}
+  .band-dark a{color:var(--gold-bright);}
+  .pullquote{text-align:center;}
+  .pullquote .big{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(1.7rem,4.4vw,3.2rem);line-height:1.08;max-width:20ch;margin:0 auto;color:var(--paper);}
+  .pullquote .big em{color:var(--gold-bright);font-style:italic;}
+  .pullquote .src{margin-top:1.6rem;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-family:"Fraunces",serif;font-weight:600;opacity:.8;}
+  .pullquote .src a{color:var(--gold-bright);text-decoration:none;border-bottom:1px solid rgba(214,162,58,.4);}
+
+  /* IDEA */
+  .prose{max-width:62ch;}
+  .prose p{margin:1.1rem 0;}
+  .lead-line{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.25;max-width:24ch;color:var(--ink);}
+  .swap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin:clamp(32px,4vw,52px) 0;}
+  @media(max-width:680px){.swap{grid-template-columns:1fr;}}
+  .swap .card{border:1.5px solid var(--ink);border-radius:3px;padding:clamp(20px,2.6vw,30px);background:var(--paper);}
+  .swap .card h4{font-family:"Fraunces",serif;font-weight:900;font-size:1.25rem;margin:0 0 .8rem;}
+  .swap .card .tag{font-family:"Fraunces",serif;font-weight:600;font-size:.74rem;text-transform:uppercase;letter-spacing:.14em;color:var(--gold);display:block;}
+  .swap .card .surplus{color:var(--ink);} .swap .card .starve{color:var(--oxblood);}
+  .models{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin-top:1.2rem;}
+  @media(max-width:680px){.models{grid-template-columns:1fr;}}
+  .model{border-left:4px solid var(--gold);padding-left:1.3rem;}
+  .model h4{font-size:1.3rem;margin:0 0 .4rem;}
+
+  /* PROOF */
+  .precedent{border-top:1.5px solid var(--line);padding:1.5rem 0;display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:start;}
+  @media(max-width:600px){.precedent{grid-template-columns:1fr;gap:.4rem;}}
+  .precedent .name{font-family:"Fraunces",serif;font-weight:900;font-size:1.25rem;min-width:9ch;}
+  .precedent .name span{display:block;font-size:.8rem;font-weight:600;color:var(--ink-soft);letter-spacing:.04em;}
+  .precedent .desc a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);}
+  .precedent .desc a:hover{color:var(--ink);border-color:var(--ink);}
+  .newflag{background:var(--paper);border:1.5px solid var(--ink);box-shadow:6px 6px 0 var(--gold);border-radius:3px;padding:clamp(22px,3vw,32px);margin-top:clamp(30px,4vw,48px);}
+  .newflag h3{font-size:1.5rem;margin:0 0 .6rem;color:var(--oxblood);}
+
+  /* OBJECTIONS */
+  details.obj{border-top:1.5px solid var(--ink);padding:0;}
+  details.obj:last-of-type{border-bottom:1.5px solid var(--ink);}
+  details.obj summary{
+    list-style:none;cursor:pointer;padding:1.25rem 2.4rem 1.25rem 0;position:relative;
+    font-family:"Fraunces",serif;font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem);color:var(--ink);
+  }
+  details.obj summary::-webkit-details-marker{display:none;}
+  details.obj summary::after{content:"+";position:absolute;right:.2rem;top:50%;transform:translateY(-50%);
+    font-family:"Fraunces",serif;font-weight:900;font-size:1.6rem;color:var(--gold);transition:transform .3s;}
+  details.obj[open] summary::after{content:"–";}
+  details.obj .ans{padding:0 0 1.5rem;max-width:64ch;color:var(--ink-2);}
+
+  /* GET INVOLVED */
+  .audience{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,2.6vw,30px);margin-top:clamp(34px,4vw,52px);}
+  @media(max-width:880px){.audience{grid-template-columns:1fr;}}
+  .aud{background:var(--paper);color:var(--ink);border-radius:3px;padding:clamp(22px,2.6vw,30px);display:flex;flex-direction:column;box-shadow:6px 6px 0 var(--gold);}
+  .aud .who{font-family:"Fraunces",serif;font-weight:600;font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;color:var(--gold);}
+  .aud h3{font-size:1.45rem;margin:.5rem 0 .8rem;line-height:1.05;}
+  .aud p{font-size:.98rem;color:var(--ink-2);margin:0 0 1.2rem;}
+  .aud .next{font-style:italic;color:var(--ink-soft);font-size:.95rem;margin-bottom:1.4rem;}
+  .aud .cta{margin-top:auto;}
+  .aud .cta a{display:inline-block;font-family:"Fraunces",serif;font-weight:600;font-size:.86rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:2px;}
+  .aud .cta a:hover{color:var(--gold);}
+
+  /* DISPATCH */
+  .dispatch{max-width:64ch;border:1.5px solid var(--ink);border-radius:3px;padding:clamp(26px,4vw,46px);background:var(--paper);box-shadow:8px 8px 0 var(--ink);}
+  .dispatch .kicker{font-family:"Fraunces",serif;font-weight:600;text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;color:var(--gold);}
+  .dispatch h3{font-size:clamp(1.5rem,3vw,2.1rem);margin:.4rem 0 1rem;}
+  .dispatch p{margin:1rem 0;}
+  .dispatch .sign{font-family:"Fraunces",serif;font-style:italic;font-weight:600;color:var(--ink);}
+  .subscribe{margin-top:1.6rem;display:flex;gap:14px;flex-wrap:wrap;}
+  .subscribe a{font-family:"Fraunces",serif;font-weight:600;font-size:.84rem;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;color:var(--ink);border:1.5px solid var(--ink);border-radius:2px;padding:.6em 1.1em;transition:all .2s;}
+  .subscribe a:hover{background:var(--ink);color:var(--paper);}
+
+  /* EVIDENCE */
+  .titles{list-style:none;padding:0;margin:1.4rem 0 0;max-width:62ch;}
+  .titles li{border-top:1.5px solid var(--line);padding:1rem 0;font-family:"Fraunces",serif;font-style:italic;font-weight:500;font-size:1.15rem;}
+  .soon{display:inline-block;font-family:"Fraunces",serif;font-weight:600;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--paper);background:var(--gold);padding:.3em .7em;border-radius:2px;vertical-align:middle;margin-left:.6rem;}
+
+  /* ABOUT */
+  .about{max-width:54ch;margin:0 auto;text-align:center;}
+  .about .eyebrow{display:inline-block;}
+  .about h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:.2em 0 .8em;}
+  .about p{margin:1.1rem 0;color:var(--ink-2);text-align:left;}
+  .about .tagline{display:block;text-align:center;margin:2rem auto 0;}
+
+  /* SOURCES */
+  .sources-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,44px);margin-top:2rem;}
+  @media(max-width:880px){.sources-grid{grid-template-columns:1fr;}}
+  .sources-grid h4{font-family:"Fraunces",serif;font-weight:900;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;border-bottom:1.5px solid var(--ink);padding-bottom:.5rem;margin:0 0 .8rem;}
+  .sources-grid ul{list-style:none;padding:0;margin:0;}
+  .sources-grid li{margin:.7rem 0;font-size:.9rem;line-height:1.4;}
+  .sources-grid a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line);}
+  .sources-grid a:hover{color:var(--gold);border-color:var(--gold);}
+
+  /* FOOTER */
+  footer{background:var(--ink);color:var(--paper);padding:clamp(54px,7vw,84px) 0 2.4rem;}
+  .foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start;}
+  .foot-brand{font-family:"Fraunces",serif;font-weight:900;font-size:1.6rem;}
+  .foot-brand span{color:var(--gold-bright);}
+  .foot-tag{font-family:"Fraunces",serif;font-style:italic;font-weight:600;color:var(--gold-bright);margin-top:.4rem;font-size:1.1rem;}
+  .foot-links{display:flex;gap:26px;flex-wrap:wrap;}
+  .foot-links a{color:var(--paper);text-decoration:none;font-family:"Fraunces",serif;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;opacity:.85;}
+  .foot-links a:hover{opacity:1;color:var(--gold-bright);}
+  .share-row{margin-top:2.4rem;border-top:1px solid rgba(244,236,218,.2);padding-top:1.8rem;display:flex;gap:14px;align-items:center;flex-wrap:wrap;}
+  .share-row .label{font-family:"Fraunces",serif;font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;opacity:.8;}
+  .share-row a{color:var(--ink);background:var(--paper);text-decoration:none;font-family:"Fraunces",serif;font-weight:600;font-size:.82rem;padding:.55em 1em;border-radius:2px;transition:transform .15s, background .2s;}
+  .share-row a:hover{transform:translateY(-2px);background:var(--gold-bright);}
+  .copyright{margin-top:2.6rem;font-size:.82rem;opacity:.7;letter-spacing:.04em;}
+  .copyright .mark{font-family:"Fraunces",serif;font-weight:600;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">Second Year <span>Seniors</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">Menu</button>
+    <nav class="nav-links" id="navlinks">
+      <a href="#collision">The Collision</a>
+      <a href="#idea">The Idea</a>
+      <a href="#proof">Already Working</a>
+      <a href="#objections">Objections</a>
+      <a href="#join">Get Involved</a>
+      <a href="#dispatches">Dispatches</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap stagger">
+    <span class="eyebrow">A once-in-history idea</span>
+    <h1>We've been warehousing our old people. And we're about to <span class="kill">bulldoze the cure.</span></h1>
+    <p class="lede">Two enormous things are happening to America at the exact same moment — and almost nobody has noticed they fit together.</p>
+    <p class="three">Colleges are running out of students. A record number of Americans are running out of places to grow old well. One of these has empty buildings. The other needs somewhere to live.</p>
+    <div>
+      <span class="tagline">Everyone deserves a senior year.</span>
+    </div>
+    <div class="btn-row">
+      <a href="#collision" class="btn btn-primary">See how the two fit →</a>
+      <a href="#share" class="btn btn-ghost" onclick="return shareIdea(event)">Share this idea</a>
+    </div>
+  </div>
+  <svg class="pennant" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M4 14 L236 52 L40 78 Z" fill="#1f3a2e"/>
+    <path d="M4 14 L236 52 L40 78 Z" stroke="#b07d22" stroke-width="3"/>
+    <circle cx="16" cy="22" r="5" fill="#b07d22"/>
+    <text x="58" y="56" font-family="Fraunces, serif" font-weight="900" font-size="30" fill="#f4ecda" transform="rotate(6 58 56)">'YY</text>
+  </svg>
+</section>
+
+<hr class="rule double">
+
+<!-- COLLISION -->
+<section id="collision">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Collision</span>
+      <h2>Two freight trains, same decade, opposite directions.</h2>
+      <p class="kick">We file both under "crisis" and look away. Put them side by side and they stop looking like two problems.</p>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat">
+        <div class="num">~11,400<small> / day</small></div>
+        <span class="cap">Americans turning 65 — every single day.</span>
+        <p style="margin:.2rem 0 .6rem;color:var(--ink-2);font-size:.98rem;">We're in the largest surge of 65th birthdays in U.S. history, and it holds for about two decades.</p>
+        <span class="src">Source: <a href="https://www.protectedincome.org/peak65/" target="_blank" rel="noopener">Alliance for Lifetime Income</a></span>
+      </div>
+      <div class="stat">
+        <div class="num">~576,000</div>
+        <span class="cap">College students about to disappear.</span>
+        <p style="margin:.2rem 0 .6rem;color:var(--ink-2);font-size:.98rem;">Births fell after 2008; that smaller generation is now aging out of college, with 18-year-olds declining for 15 years.</p>
+        <span class="src">Source: <a href="https://agb.org/blog-post/impacts-of-the-enrollment-cliff-in-2025-2026/" target="_blank" rel="noopener">Grawe / AGB</a></span>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="crisis reveal">
+        <h3>The campus is emptying out</h3>
+        <p>The "enrollment cliff" isn't a scare story — it's arithmetic that already happened.</p>
+        <ul>
+          <li>U.S. high school graduates <strong>peaked in 2025</strong> and decline for roughly 15 years, falling ~13% by 2041. (<a href="https://allaccess.collegeboard.org/enrollment-cliff-looming-heres-how-college-leaders-can-prepare" target="_blank" rel="noopener">WICHE / College Board</a>)</li>
+          <li>The college-age population falls ~15% between 2025–2029 — about <strong>576,000 fewer students</strong>. (<a href="https://rcstrat.com/research-and-insights/higher-education-demographic-cliff-enrollment-decline-2029" target="_blank" rel="noopener">RC Strategies</a>)</li>
+          <li>And it lands on a slide that began earlier: enrollment has been <strong>declining since 2012</strong>. (<a href="https://www.edvisorly.com/university-insights/enrollment-cliff" target="_blank" rel="noopener">Edvisorly</a>)</li>
+          <li>The result is already here: <strong>120+ colleges have closed or merged since 2016</strong>, hit hardest in the Midwest and Northeast. (<a href="https://www.synario.com/resources/blog/enrollment-cliff/" target="_blank" rel="noopener">Synario</a>)</li>
+        </ul>
+      </div>
+      <div class="crisis reveal">
+        <h3>The country is getting old all at once</h3>
+        <p>The biggest generation in American history is hitting retirement in a single wave.</p>
+        <ul>
+          <li>Since 2024, more than <strong>11,200 Americans turn 65 every day</strong> — over 4.1 million a year. (<a href="https://www.protectedincome.org/news/analysis-peak-65-boom/" target="_blank" rel="noopener">Alliance for Lifetime Income</a>)</li>
+          <li><strong>2025 was the absolute peak</strong> (~11,400/day), and elevated numbers hold ~20 years until Millennials start turning 65. (<a href="https://www.kiplinger.com/retirement/turning-65-key-things-to-know" target="_blank" rel="noopener">Kiplinger</a>)</li>
+          <li>This wave won't house itself: we don't have nearly enough good places to grow old with company, purpose, and dignity.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CROSSOVER BANNER -->
+<section class="band-dark">
+  <div class="wrap pullquote reveal">
+    <span class="eyebrow">The once-in-history part</span>
+    <p class="big">By 2030, for the first time in American history, there will be more people over 65 <em>(about 71 million)</em> than under 18 <em>(about 68 million).</em></p>
+    <p class="src">The institutions we built for the young have spare room. The window won't be this clean again. — <a href="https://www.protectedincome.org/news/analysis-peak-65-boom/" target="_blank" rel="noopener">Alliance for Lifetime Income</a></p>
+  </div>
+</section>
+
+<!-- THE IDEA -->
+<section id="idea" style="background:var(--paper-deep);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Idea</span>
+      <h2>Put the surplus where the shortage is.</h2>
+    </div>
+    <p class="lead-line reveal" style="margin:1.4rem 0 2rem;">Let struggling and shuttered colleges become homes for the older Americans who need exactly what a campus already has.</p>
+    <div class="prose reveal">
+      <p>Not "build a retirement village near a university." That exists. The bigger, stranger, more urgent opportunity is to take the colleges that are <em>failing</em> — closing, merging, staring down empty dorms — and give those buildings a second life instead of a wrecking ball.</p>
+    </div>
+
+    <div class="swap">
+      <div class="card reveal">
+        <span class="tag">The college</span>
+        <h4>has a surplus of</h4>
+        <p class="surplus">Space, dining halls, gyms, libraries, theaters, clinics, walkable grounds, a full events calendar, a sense of place — and a mission.</p>
+        <h4 style="margin-top:1.2rem;">is starving for</h4>
+        <p class="starve">People. And money.</p>
+      </div>
+      <div class="card reveal">
+        <span class="tag">The older adult</span>
+        <h4>has a surplus of</h4>
+        <p class="surplus">Money (often home equity and savings), time, and decades of accumulated skill and judgment.</p>
+        <h4 style="margin-top:1.2rem;">is starving for</h4>
+        <p class="starve">Community, purpose, walkability, things to do — and a way out of isolation.</p>
+      </div>
+    </div>
+    <p class="prose reveal" style="font-style:italic;color:var(--ink-soft);">Money and life flow toward the campus. Housing, community, and meaning flow back. Both arrows are real. That's why this is a deal, not a donation.</p>
+
+    <h3 class="reveal" style="font-size:1.6rem;margin:2.6rem 0 1rem;">Two ways to do it</h3>
+    <div class="models">
+      <div class="model reveal">
+        <h4>The full conversion</h4>
+        <p>A closing college becomes a community for people 55+. Dorms become apartments; the dining hall stays a dining hall; the gym, library, and theater were already perfect. A dying institution becomes a thriving one with a different student body.</p>
+      </div>
+      <div class="model reveal">
+        <h4>The hybrid campus</h4>
+        <p>A college that's shrinking but alive adds older residents alongside its students. Empty wings fill up. Residents stabilize the budget; students gain mentors; the campus regains the one thing a half-empty campus most lacks — life.</p>
+      </div>
+    </div>
+
+    <div class="prose reveal" style="margin-top:2.4rem;">
+      <h3 style="font-size:1.6rem;margin:0 0 .6rem;">And yes — they can go back to college</h3>
+      <p>The most-marketed-to generation in history grew up believing they'd be young forever, and "going back to college in your seventies" isn't a consolation prize — it's a flex. Audit a seminar. Use the library. Catch the student production. Mentor a sophomore. Take a <em>gap decade</em>.</p>
+      <p>We call the residents <strong>emeriti</strong>, because that's what they are: distinguished members of the institution, still on the faculty of life.</p>
+      <p style="font-family:'Fraunces',serif;font-weight:600;font-size:1.2rem;color:var(--ink);">To be clear about the priority: the learning is the amenity. The buildings are the point.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ALREADY WORKING -->
+<section id="proof">
+  <div class="wrap">
+    <div class="section-head reveal" style="max-width:34ch;">
+      <span class="eyebrow">Already Working</span>
+      <h2>We're not asking you to imagine this. Go visit one.</h2>
+      <p class="kick">There's even a name for it — a University-Based Retirement Community — a formal certification standard, and a directory listing <strong>80+</strong> of them. (<a href="https://www.mcknightsseniorliving.com/news/ccrc-earns-nations-first-certification-as-a-university-based-retirement-community/" target="_blank" rel="noopener">McKnight's</a>)</p>
+    </div>
+
+    <div class="reveal" style="margin-top:2rem;">
+      <div class="precedent">
+        <div class="name">Mirabella<span>Arizona State University · Tempe</span></div>
+        <div class="desc">A 20-story community right on campus. ASU's president dubbed it "the world's coolest dorm." Residents get a university ID, audit classes, and a program houses music students among them. It sold out before it was finished. (<a href="https://www.insidehighered.com/news/2019/01/09/high-demand-retirees-live-campus-arizona-state-university" target="_blank" rel="noopener">Inside Higher Ed</a>)</div>
+      </div>
+      <div class="precedent">
+        <div class="name">Lasell Village<span>Lasell University · Newton, MA</span></div>
+        <div class="desc">About 225 residents on a 13-acre campus — and learning is so central that residents commit to <strong>450 hours of education a year</strong>. (<a href="https://lasellvillage.com/about/" target="_blank" rel="noopener">Lasell Village</a>)</div>
+      </div>
+      <div class="precedent">
+        <div class="name">Oak Hammock<span>University of Florida · Gainesville</span></div>
+        <div class="desc">Residents audit UF courses for free and take classes taught by university faculty. (<a href="https://www.aplaceformom.com/caregiver-resources/articles/seniors-head-back-to-school" target="_blank" rel="noopener">A Place for Mom</a>)</div>
+      </div>
+      <div class="precedent">
+        <div class="name">Kendal &amp; Broadview<span>Oberlin College · Purchase College, SUNY</span></div>
+        <div class="desc">Proof this works at small liberal-arts colleges and at public ones — not just big flagships. (<a href="https://www.aarp.org/money/retirement/colleges-with-retirement-communities/" target="_blank" rel="noopener">AARP</a>)</div>
+      </div>
+    </div>
+
+    <div class="newflag reveal">
+      <h3>So what's actually new here?</h3>
+      <p style="margin:0;">Look closely: almost all of these are bolted onto <strong>thriving, often prestigious</strong> schools — and most are pricey, ground-up construction. (<a href="https://www.kiplinger.com/retirement/happy-retirement/is-a-university-retirement-community-right-for-you" target="_blank" rel="noopener">Kiplinger</a>) The model has been treated as a luxury for winners. We're proposing it as a rescue for the losers — and a far cheaper one, because the buildings already exist. <strong>The distressed colleges aren't the obstacle to this idea. They're the supply.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIONS -->
+<section id="objections" style="background:var(--paper-deep);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">But Is This Real?</span>
+      <h2>The skeptic's corner.</h2>
+      <p class="kick">A good idea should be able to take a punch. Honest objections, answered honestly.</p>
+    </div>
+    <div class="obj reveal" style="margin-top:2rem;">
+      <details class="obj">
+        <summary>Isn't the "enrollment cliff" overhyped? Some colleges just posted record enrollment.</summary>
+        <div class="ans">Fair — and true. Fall 2024 actually saw an enrollment bump, and some analysts argue the cliff is overstated for the system as a whole. (<a href="https://www.synario.com/resources/blog/enrollment-cliff/" target="_blank" rel="noopener">Synario</a>; <a href="https://ctas.substack.com/p/what-demographic-cliff" target="_blank" rel="noopener">a skeptical take</a>) But two things hold regardless: the number of 18-year-olds really is falling for 15 years, and 120+ colleges have already closed or merged. You don't need a system-wide collapse for this idea to matter — you need empty buildings, and those exist by the hundreds.</div>
+      </details>
+      <details class="obj">
+        <summary>Do older adults actually want to live around 19-year-olds?</summary>
+        <div class="ans">Some do, some don't — which is why there are two models. The full-conversion 55+ campus has no undergrads at all; it just inherits great bones. The hybrid is opt-in, and where it's been tried, the intergenerational mix is the selling point, not the bug.</div>
+      </details>
+      <details class="obj">
+        <summary>Isn't this just a nursing home with a mascot?</summary>
+        <div class="ans">No — and the distinction is the whole point. The spine is independent living for active people, on a campus built for movement and gathering, with care available as needs change. The failure mode of American aging is isolation. A campus is an anti-isolation machine.</div>
+      </details>
+      <details class="obj">
+        <summary>What about zoning, healthcare licensing, accreditation, financing?</summary>
+        <div class="ans">Real, and not trivial — converting a dorm to senior housing touches building codes, care licensing, and local zoning. But none of it is novel: 80+ existing communities have already cut these paths, and a closing college is often a town's biggest employer, which makes local officials highly motivated to find a yes. This is "complicated, not impossible" — the kind of problem operators solve for a living.</div>
+      </details>
+      <details class="obj">
+        <summary>Who pays for it?</summary>
+        <div class="ans">Often the residents do, through the same entrance-fee and monthly-fee structures that fund existing communities — which is exactly why this pencils out for a cash-strapped college. The older generation is, as a group, holding the assets. The point is to route some of that toward saving the institutions instead of bulldozing them.</div>
+      </details>
+      <details class="obj">
+        <summary>If it's so obvious, why isn't it happening already?</summary>
+        <div class="ans">Honestly? Because the two crises are managed by two completely different worlds — higher-ed administrators and senior-living operators — who rarely sit in the same room. This whole site is an attempt to get them to.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section id="join" class="band-dark">
+  <div class="wrap">
+    <div class="section-head reveal" style="max-width:36ch;">
+      <span class="eyebrow">Get Involved</span>
+      <h2 style="color:var(--paper);">This only happens if the right people catch the idea.</h2>
+      <p class="kick" style="color:rgba(244,236,218,.8);">You might be one of them.</p>
+    </div>
+    <div class="audience reveal">
+      <div class="aud">
+        <span class="who">If you run a college</span>
+        <h3>Trustee · President · CFO</h3>
+        <p>You're sitting on the asset, with a duty to consider every path to survival. Repurposing isn't an admission of failure — it's a repositioning that keeps the lights on and turns a heartbreaking closure into a second founding.</p>
+        <p class="next">Next: put it on the agenda. Talk to an operator before a demolition contractor.</p>
+        <div class="cta"><a href="#share" onclick="return shareIdea(event)">Share with your board →</a></div>
+      </div>
+      <div class="aud">
+        <span class="who">If you run senior living</span>
+        <h3>Operator · Developer · Investor</h3>
+        <p>You spend fortunes building the campus experience from dirt. Hundreds of campuses already have it — at distressed prices, in towns that will roll out the red carpet to keep their college alive. First movers get the best buildings.</p>
+        <p class="next">Next: list the struggling colleges in your footprint. The deals are coming either way.</p>
+        <div class="cta"><a href="#dispatches">Get the dispatches →</a></div>
+      </div>
+      <div class="aud">
+        <span class="who">If you're an action-oriented older adult</span>
+        <h3>You're the spark</h3>
+        <p>You might be the most important person here. You can forward this to a trustee, raise it at an alumni board, write your local college's president — or simply decide you want this for your own seventies and start asking. Movements start when people say the obvious thing out loud.</p>
+        <p class="next">Next: send this to one person who could act on it.</p>
+        <div class="cta"><a href="#share" onclick="return shareIdea(event)">Pass it on →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISPATCHES -->
+<section id="dispatches">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Dispatches</span>
+      <h2>Notes on the idea, the data, the colleges to watch.</h2>
+      <p class="kick">The recurring feature — profiles of campuses that should be reborn — is called <em>Homecoming</em>.</p>
+    </div>
+    <div class="dispatch reveal" style="margin-top:2.4rem;">
+      <span class="kicker">Launch post</span>
+      <h3>Why this site exists (and why now)</h3>
+      <p>I keep waiting for someone smarter to say this, and they haven't, so here goes.</p>
+      <p>We're about to spend the 2020s and 2030s doing two sad things at once: mourning the colleges that close, and worrying about where tens of millions of older Americans will live. I don't understand why we're not allowed to notice that one is the answer to the other.</p>
+      <p>I'm not angry about it. I'm just puzzled. The buildings are right there. The need is right there. The model already exists in 80-plus places. The only thing missing is for the people who run colleges and the people who run senior living to be in the same conversation — and for the rest of us to decide this is normal and good and overdue.</p>
+      <p>So this is me saying it out loud, in the hope it catches. If you've read this far, you're now in on the secret. Pass it on.</p>
+      <p class="sign">— Second Year Seniors</p>
+      <div class="subscribe">
+        <a href="/feed.xml">Subscribe via RSS</a>
+        <a href="mailto:hello@secondyearseniors.com?subject=Subscribe%20me%20to%20the%20dispatches">Subscribe by email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVIDENCE -->
+<section id="evidence" style="background:var(--paper-deep);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Evidence</span>
+      <h2>The serious work <span class="soon">Coming soon</span></h2>
+      <p class="kick">Where the financial models, conversion playbooks, and case studies will live.</p>
+    </div>
+    <ul class="titles reveal">
+      <li>The Distressed-Campus Conversion Model — what the numbers look like when the buildings already exist.</li>
+      <li>From Closure to Homecoming — a step-by-step playbook for a college board.</li>
+      <li>The Hybrid Campus — what the research says about intergenerational living.</li>
+    </ul>
+    <p class="reveal" style="margin-top:1.6rem;"><a href="mailto:hello@secondyearseniors.com?subject=Co-writing%20a%20white%20paper" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);">Want to co-write one? Get in touch →</a></p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about reveal">
+    <span class="eyebrow">About</span>
+    <h2>Why this site exists.</h2>
+    <p>This is not a company, a pitch, or a thesis. It's an idea that wouldn't leave me alone.</p>
+    <p>Two of the biggest stories of our time — colleges running out of students, and a country running out of room to grow old well — are usually told as separate tragedies. Stand them next to each other and they look less like two problems and more like a key and a lock.</p>
+    <p>There's no product here and nothing to buy. The goal is smaller and bigger than that: to put the idea into enough heads that someone with a campus and someone with a plan finally have the conversation. If that happens even once because of something you read here, this was worth it.</p>
+    <p>If you want to argue with it, improve it, or act on it, good. That's the point.</p>
+    <span class="tagline">Everyone deserves a senior year.</span>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section id="sources" style="background:var(--paper-deep);padding-bottom:clamp(48px,6vw,80px);">
+  <div class="wrap">
+    <div class="section-head reveal"><span class="eyebrow">Sources</span><h2 style="font-size:clamp(1.6rem,3vw,2.3rem);">Everything above, linked.</h2></div>
+    <div class="sources-grid reveal">
+      <div>
+        <h4>The Enrollment Cliff</h4>
+        <ul>
+          <li><a href="https://allaccess.collegeboard.org/enrollment-cliff-looming-heres-how-college-leaders-can-prepare" target="_blank" rel="noopener">WICHE / College Board — grads peaked 2025, ~13% decline by 2041</a></li>
+          <li><a href="https://agb.org/blog-post/impacts-of-the-enrollment-cliff-in-2025-2026/" target="_blank" rel="noopener">AGB — Grawe's ~15% (2025–2029) projection</a></li>
+          <li><a href="https://rcstrat.com/research-and-insights/higher-education-demographic-cliff-enrollment-decline-2029" target="_blank" rel="noopener">RC Strategies — the ~576,000 figure</a></li>
+          <li><a href="https://www.edvisorly.com/university-insights/enrollment-cliff" target="_blank" rel="noopener">Edvisorly — declining since 2012</a></li>
+          <li><a href="https://www.synario.com/resources/blog/enrollment-cliff/" target="_blank" rel="noopener">Synario — 120+ closures since 2016</a></li>
+          <li><a href="https://ctas.substack.com/p/what-demographic-cliff" target="_blank" rel="noopener">A skeptical counterpoint</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Peak 65 / Aging</h4>
+        <ul>
+          <li><a href="https://www.protectedincome.org/peak65/" target="_blank" rel="noopener">Alliance for Lifetime Income — Peak 65 hub</a></li>
+          <li><a href="https://www.protectedincome.org/news/analysis-peak-65-boom/" target="_blank" rel="noopener">11,200/day; 71M vs 68M by 2030</a></li>
+          <li><a href="https://www.prnewswire.com/news-releases/the-us-has-reached-the-peak-of-peak-65-its-time-to-apply-retirement-readiness-lessons-from-the-boomer-experience-302360086.html" target="_blank" rel="noopener">2025 peak; elevated ~20 years</a></li>
+          <li><a href="https://www.kiplinger.com/retirement/turning-65-key-things-to-know" target="_blank" rel="noopener">Kiplinger — 2025 record (4.18M)</a></li>
+          <li><a href="https://www.cnbc.com/2024/02/08/baby-boomers-hit-peak-65-in-2024-why-retirement-age-is-in-question.html" target="_blank" rel="noopener">CNBC — Peak 65 overview</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>University-Based Retirement Communities</h4>
+        <ul>
+          <li><a href="https://www.mcknightsseniorliving.com/news/ccrc-earns-nations-first-certification-as-a-university-based-retirement-community/" target="_blank" rel="noopener">McKnight's — first certified UBRC; 80+ nationwide</a></li>
+          <li><a href="https://www.insidehighered.com/news/2019/01/09/high-demand-retirees-live-campus-arizona-state-university" target="_blank" rel="noopener">Inside Higher Ed — Mirabella at ASU</a></li>
+          <li><a href="https://www.aarp.org/money/retirement/colleges-with-retirement-communities/" target="_blank" rel="noopener">AARP — overview and roster</a></li>
+          <li><a href="https://lasellvillage.com/about/" target="_blank" rel="noopener">Lasell Village</a></li>
+          <li><a href="https://www.aplaceformom.com/caregiver-resources/articles/seniors-head-back-to-school" target="_blank" rel="noopener">A Place for Mom — Mirabella, Oak Hammock</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="share">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">Second Year <span>Seniors</span></div>
+        <div class="foot-tag">Everyone deserves a senior year.</div>
+      </div>
+      <nav class="foot-links">
+        <a href="#about">About</a>
+        <a href="#evidence">The Evidence</a>
+        <a href="#sources">Sources</a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+    </div>
+    <div class="share-row">
+      <span class="label">Pass it on:</span>
+      <a id="sh-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https://secondyearseniors.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="sh-x" href="https://twitter.com/intent/tweet?text=We've%20been%20warehousing%20our%20old%20people%20%E2%80%94%20and%20we're%20about%20to%20bulldoze%20the%20cure.&url=https://secondyearseniors.com" target="_blank" rel="noopener">X</a>
+      <a id="sh-em" href="mailto:?subject=Everyone%20deserves%20a%20senior%20year&body=I%20think%20you'll%20find%20this%20idea%20worth%2090%20seconds%3A%20https%3A%2F%2Fsecondyearseniors.com" target="_blank" rel="noopener">Email</a>
+      <a id="sh-cp" href="#" onclick="return copyLink(event)">Copy link</a>
+    </div>
+    <div class="copyright">© <span id="yr"></span> <span class="mark">Adalia Works</span>. Second Year Seniors. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // scroll reveal
+  (function(){
+    var els = document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){en.target.classList.add('in'); io.unobserve(en.target);} });
+    },{threshold:.12});
+    els.forEach(function(e){io.observe(e);});
+  })();
+
+  // close mobile menu on link click
+  document.querySelectorAll('#navlinks a').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('navlinks').classList.remove('open');});
+  });
+
+  // share button — try native share, fall back to footer share row
+  function shareIdea(e){
+    e.preventDefault();
+    var data={title:'Second Year Seniors',text:"We've been warehousing our old people — and we're about to bulldoze the cure.",url:(location.origin&&location.origin!=='null')?location.origin:'https://secondyearseniors.com'};
+    if(navigator.share){ navigator.share(data).catch(function(){}); }
+    else { document.getElementById('share').scrollIntoView({behavior:'smooth'}); }
+    return false;
+  }
+  function copyLink(e){
+    e.preventDefault();
+    var url=(location.origin&&location.origin!=='null')?location.origin:'https://secondyearseniors.com';
+    var el=document.getElementById('sh-cp');
+    function done(){var t=el.textContent;el.textContent='Copied!';setTimeout(function(){el.textContent=t;},1600);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(done).catch(done);}
+    else{done();}
+    return false;
+  }
+</script>
+</body>
 </html>
