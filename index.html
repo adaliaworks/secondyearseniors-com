@@ -233,6 +233,23 @@
   .sources-grid a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line);}
   .sources-grid a:hover{color:var(--gold);border-color:var(--gold);}
 
+  /* CONTACT FORM */
+  .contact-wrap{max-width:42rem;}
+  .contact-form{display:grid;gap:1rem;margin-top:1.2rem;}
+  .contact-form .hp{display:none !important;}
+  .contact-form .field{display:flex;flex-direction:column;gap:.35rem;}
+  .contact-form label{font-family:"Fraunces",serif;font-weight:600;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);}
+  .contact-form input,.contact-form textarea{
+    font-family:"Newsreader",serif;font-size:1rem;color:var(--ink);background:var(--paper);
+    border:1.5px solid var(--ink);border-radius:2px;padding:.7em .85em;width:100%;
+  }
+  .contact-form textarea{resize:vertical;min-height:120px;}
+  .contact-form input:focus,.contact-form textarea:focus{outline:none;box-shadow:3px 3px 0 var(--gold);}
+  .contact-form button{justify-self:start;}
+  .form-status{font-style:italic;color:var(--ink-soft);margin:.3rem 0 0;min-height:1.2em;}
+  .form-status.ok{color:var(--ink);font-style:normal;font-family:"Fraunces",serif;font-weight:600;}
+  .form-status.err{color:var(--oxblood);}
+
   /* FOOTER */
   footer{background:var(--ink);color:var(--paper);padding:clamp(54px,7vw,84px) 0 2.4rem;}
   .foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:flex-start;}
@@ -516,8 +533,8 @@
       <p class="kick">The recurring feature — profiles of campuses that should be reborn — is called <em>Homecoming</em>.</p>
     </div>
     <div class="dispatch reveal" style="margin-top:2.4rem;">
-      <span class="kicker">Launch post</span>
-      <h3>Why this site exists (and why now)</h3>
+      <span class="kicker">Dispatch 001 · June 2, 2026</span>
+      <h3>Why this site exists</h3>
       <p>I keep waiting for someone smarter to say this, and they haven't, so here goes.</p>
       <p>We're about to spend the 2020s and 2030s doing two sad things at once: mourning the colleges that close, and worrying about where tens of millions of older Americans will live. I don't understand why we're not allowed to notice that one is the answer to the other.</p>
       <p>I'm not angry about it. I'm just puzzled. The buildings are right there. The need is right there. The model already exists in 80-plus places. The only thing missing is for the people who run colleges and the people who run senior living to be in the same conversation — and for the rest of us to decide this is normal and good and overdue.</p>
@@ -544,7 +561,29 @@
       <li>From Closure to Homecoming — a step-by-step playbook for a college board.</li>
       <li>The Hybrid Campus — what the research says about intergenerational living.</li>
     </ul>
-    <p class="reveal" style="margin-top:1.6rem;"><a href="mailto:hello@secondyearseniors.com?subject=Co-writing%20a%20white%20paper" style="color:var(--gold);text-decoration:none;border-bottom:1px solid var(--line);">Want to co-write one? Get in touch →</a></p>
+    <div class="contact-wrap reveal" id="contact" style="margin-top:1.8rem;">
+      <p style="margin:0;font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;">Want to co-write one — or just get in touch?</p>
+      <form class="contact-form" id="contactForm">
+        <input type="hidden" name="access_key" value="d503d998-6702-48b9-acb0-a32999cec661">
+        <input type="hidden" name="subject" value="Second Year Seniors — someone got in touch">
+        <input type="hidden" name="from_name" value="Second Year Seniors">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" name="name" required>
+        </div>
+        <div class="field">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send →</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -552,7 +591,7 @@
 <section id="about">
   <div class="wrap about reveal">
     <span class="eyebrow">About</span>
-    <h2>Why this site exists.</h2>
+    <h2>What this is.</h2>
     <p>This is not a company, a pitch, or a thesis. It's an idea that wouldn't leave me alone.</p>
     <p>Two of the biggest stories of our time — colleges running out of students, and a country running out of room to grow old well — are usually told as separate tragedies. Stand them next to each other and they look less like two problems and more like a key and a lock.</p>
     <p>There's no product here and nothing to buy. The goal is smaller and bigger than that: to put the idea into enough heads that someone with a campus and someone with a plan finally have the conversation. If that happens even once because of something you read here, this was worth it.</p>
@@ -613,6 +652,7 @@
         <a href="#about">About</a>
         <a href="#evidence">The Evidence</a>
         <a href="#sources">Sources</a>
+        <a href="#contact">Get in touch</a>
         <a href="/feed.xml">RSS</a>
       </nav>
     </div>
@@ -662,6 +702,40 @@
     else{done();}
     return false;
   }
+
+  // contact form (web3forms) — submit in-page, graceful fallback
+  (function(){
+    var cf = document.getElementById('contactForm');
+    if(!cf) return;
+    cf.addEventListener('submit', function(e){
+      e.preventDefault();
+      var status = document.getElementById('formStatus');
+      var btn = cf.querySelector('button[type="submit"]');
+      status.className = 'form-status';
+      status.textContent = 'Sending…';
+      if(btn) btn.disabled = true;
+      var payload = JSON.stringify(Object.fromEntries(new FormData(cf).entries()));
+      fetch('https://api.web3forms.com/submit',{
+        method:'POST',
+        headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body: payload
+      }).then(function(r){return r.json();}).then(function(j){
+        if(j && j.success){
+          cf.reset();
+          status.textContent = "Thanks — your note is on its way. We'll be in touch.";
+          status.className = 'form-status ok';
+        } else {
+          status.textContent = "That didn't go through. Try emailing hello@secondyearseniors.com instead.";
+          status.className = 'form-status err';
+        }
+        if(btn) btn.disabled = false;
+      }).catch(function(){
+        status.textContent = "That didn't go through. Try emailing hello@secondyearseniors.com instead.";
+        status.className = 'form-status err';
+        if(btn) btn.disabled = false;
+      });
+    });
+  })();
 </script>
 </body>
 </html>
