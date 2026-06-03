@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Second Year Seniors — Everyone deserves a senior year</title>
-<meta name="description" content="Colleges are running out of students. A record number of Americans need somewhere to grow old well. One of these has empty buildings. The other needs a place to live. We've been warehousing our old people — and we're about to bulldoze the cure.">
-<meta name="author" content="Adalia Works">
+<meta name="description" content="Colleges are running out of students just as a record number of Americans need somewhere to grow old well. Why are we tearing down empty campuses instead of turning them into homes for the Peak 65 generation?">
+<meta name="author" content="Trey Miller">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Second Year Seniors">
-<meta property="og:description" content="We've been warehousing our old people. And we're about to bulldoze the cure. The case for turning failing campuses into homes for the Peak 65 generation.">
+<meta property="og:description" content="Why are we tearing down empty campuses just as the country runs out of room to grow old? The case for turning struggling colleges into homes for the Peak 65 generation.">
 <meta property="og:site_name" content="Second Year Seniors">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="Second Year Seniors — Dispatches" href="/feed.xml">
@@ -39,7 +39,6 @@
     -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
     overflow-x:hidden;
   }
-  /* paper grain */
   body::before{
     content:"";position:fixed;inset:0;pointer-events:none;z-index:9999;opacity:.05;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
@@ -95,10 +94,10 @@
 
   /* HERO */
   .hero{padding-top:clamp(56px,7vw,96px);padding-bottom:clamp(48px,6vw,84px);position:relative;}
-  .hero h1{font-size:clamp(2.6rem,7.2vw,5.4rem);max-width:20ch;margin:.2em 0 .1em;text-wrap:balance;}
+  .hero h1{font-size:clamp(2.5rem,6.6vw,5rem);max-width:21ch;margin:.2em 0 .1em;text-wrap:balance;}
   .hero h1 .kill{color:var(--oxblood);font-style:italic;}
-  .hero .lede{font-size:clamp(1.15rem,1.6vw,1.45rem);max-width:34ch;margin:1.6rem 0 0;color:var(--ink-2);}
-  .hero .three{margin:1.4rem 0 0;max-width:40ch;color:var(--ink-soft);}
+  .hero .lede{font-size:clamp(1.15rem,1.6vw,1.45rem);max-width:36ch;margin:1.6rem 0 0;color:var(--ink-2);}
+  .hero .three{margin:1.4rem 0 0;max-width:42ch;color:var(--ink-soft);}
   .tagline{
     display:inline-block;margin-top:2rem;font-family:"Fraunces",serif;font-style:italic;font-weight:600;
     font-size:clamp(1.2rem,2vw,1.6rem);color:var(--ink);border-bottom:3px solid var(--gold);padding-bottom:2px;
@@ -147,7 +146,7 @@
   .band-dark .eyebrow{color:var(--gold-bright);}
   .band-dark a{color:var(--gold-bright);}
   .pullquote{text-align:center;}
-  .pullquote .big{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(1.7rem,4.4vw,3.2rem);line-height:1.08;max-width:20ch;margin:0 auto;color:var(--paper);}
+  .pullquote .big{font-family:"Fraunces",serif;font-weight:900;font-size:clamp(1.7rem,4.4vw,3.2rem);line-height:1.08;max-width:22ch;margin:0 auto;color:var(--paper);}
   .pullquote .big em{color:var(--gold-bright);font-style:italic;}
   .pullquote .src{margin-top:1.6rem;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-family:"Fraunces",serif;font-weight:600;opacity:.8;}
   .pullquote .src a{color:var(--gold-bright);text-decoration:none;border-bottom:1px solid rgba(214,162,58,.4);}
@@ -155,7 +154,7 @@
   /* IDEA */
   .prose{max-width:62ch;}
   .prose p{margin:1.1rem 0;}
-  .lead-line{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.25;max-width:24ch;color:var(--ink);}
+  .lead-line{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.25;max-width:26ch;color:var(--ink);}
   .swap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,40px);margin:clamp(32px,4vw,52px) 0;}
   @media(max-width:680px){.swap{grid-template-columns:1fr;}}
   .swap .card{border:1.5px solid var(--ink);border-radius:3px;padding:clamp(20px,2.6vw,30px);background:var(--paper);}
@@ -224,15 +223,6 @@
   .about p{margin:1.1rem 0;color:var(--ink-2);text-align:left;}
   .about .tagline{display:block;text-align:center;margin:2rem auto 0;}
 
-  /* SOURCES */
-  .sources-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,44px);margin-top:2rem;}
-  @media(max-width:880px){.sources-grid{grid-template-columns:1fr;}}
-  .sources-grid h4{font-family:"Fraunces",serif;font-weight:900;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;border-bottom:1.5px solid var(--ink);padding-bottom:.5rem;margin:0 0 .8rem;}
-  .sources-grid ul{list-style:none;padding:0;margin:0;}
-  .sources-grid li{margin:.7rem 0;font-size:.9rem;line-height:1.4;}
-  .sources-grid a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line);}
-  .sources-grid a:hover{color:var(--gold);border-color:var(--gold);}
-
   /* CONTACT FORM */
   .contact-wrap{max-width:42rem;}
   .contact-form{display:grid;gap:1rem;margin-top:1.2rem;}
@@ -249,6 +239,15 @@
   .form-status{font-style:italic;color:var(--ink-soft);margin:.3rem 0 0;min-height:1.2em;}
   .form-status.ok{color:var(--ink);font-style:normal;font-family:"Fraunces",serif;font-weight:600;}
   .form-status.err{color:var(--oxblood);}
+
+  /* SOURCES */
+  .sources-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,44px);margin-top:2rem;}
+  @media(max-width:880px){.sources-grid{grid-template-columns:1fr;}}
+  .sources-grid h4{font-family:"Fraunces",serif;font-weight:900;font-size:1rem;text-transform:uppercase;letter-spacing:.08em;border-bottom:1.5px solid var(--ink);padding-bottom:.5rem;margin:0 0 .8rem;}
+  .sources-grid ul{list-style:none;padding:0;margin:0;}
+  .sources-grid li{margin:.7rem 0;font-size:.9rem;line-height:1.4;}
+  .sources-grid a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line);}
+  .sources-grid a:hover{color:var(--gold);border-color:var(--gold);}
 
   /* FOOTER */
   footer{background:var(--ink);color:var(--paper);padding:clamp(54px,7vw,84px) 0 2.4rem;}
@@ -277,7 +276,7 @@
     <nav class="nav-links" id="navlinks">
       <a href="#collision">The Collision</a>
       <a href="#idea">The Idea</a>
-      <a href="#proof">Already Working</a>
+      <a href="#proof">What's Working</a>
       <a href="#objections">Objections</a>
       <a href="#join">Get Involved</a>
       <a href="#dispatches">Dispatches</a>
@@ -288,10 +287,10 @@
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="wrap stagger">
-    <span class="eyebrow">A once-in-history idea</span>
-    <h1>We're <span class="kill">tearing down empty campuses</span> — right as the country runs out of room to grow old.</h1>
-    <p class="lede">Two enormous things are happening to America at the exact same moment — and almost nobody has noticed they fit together.</p>
-    <p class="three">Colleges are running out of students. A record number of Americans are running out of places to grow old well. One of these has empty buildings. The other needs somewhere to live.</p>
+    <span class="eyebrow">A once-in-history opportunity</span>
+    <h1>Why are we <span class="kill">tearing down empty campuses</span> — just as the country runs out of room to grow old?</h1>
+    <p class="lede">Two generational shifts are happening to America at the exact same moment — and nobody seems to see how they fit together.</p>
+    <p class="three">Colleges are running out of students. A record number of Americans are running out of places to grow old well. Fewer Seniors are enrolled, while more and more senior citizens need a better place to live.</p>
     <div>
       <span class="tagline">Everyone deserves a senior year.</span>
     </div>
@@ -315,43 +314,43 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">The Collision</span>
-      <h2>Two freight trains, same decade, opposite directions.</h2>
-      <p class="kick">We file both under "crisis" and look away. Put them side by side and they stop looking like two problems.</p>
+      <h2>Two trains, same tracks, moving in opposite directions.</h2>
+      <p class="kick">Put them side by side and they start looking like the solution to each other's problem.</p>
     </div>
 
     <div class="stats reveal">
       <div class="stat">
-        <div class="num">~11,400<small> / day</small></div>
-        <span class="cap">Americans turning 65 — every single day.</span>
-        <p style="margin:.2rem 0 .6rem;color:var(--ink-2);font-size:.98rem;">We're in the largest surge of 65th birthdays in U.S. history, and it holds for about two decades.</p>
-        <span class="src">Source: <a href="https://www.protectedincome.org/peak65/" target="_blank" rel="noopener">Alliance for Lifetime Income</a></span>
-      </div>
-      <div class="stat">
         <div class="num">~576,000</div>
         <span class="cap">College students about to disappear.</span>
-        <p style="margin:.2rem 0 .6rem;color:var(--ink-2);font-size:.98rem;">Births fell after 2008; that smaller generation is now aging out of college, with 18-year-olds declining for 15 years.</p>
+        <p style="margin:.2rem 0 .6rem;color:var(--ink-2);font-size:.98rem;">Births fell after 2008; that smaller generation is now entering college age, and the number of 18-year-olds will decline for the next 15 years.</p>
         <span class="src">Source: <a href="https://agb.org/blog-post/impacts-of-the-enrollment-cliff-in-2025-2026/" target="_blank" rel="noopener">Grawe / AGB</a></span>
+      </div>
+      <div class="stat">
+        <div class="num">~11,400<small> / day</small></div>
+        <span class="cap">Americans turn 65 — every single day.</span>
+        <p style="margin:.2rem 0 .6rem;color:var(--ink-2);font-size:.98rem;">We're in the largest surge of 65th birthdays in U.S. history, and will be for about two decades.</p>
+        <span class="src">Source: <a href="https://www.prnewswire.com/news-releases/the-us-has-reached-the-peak-of-peak-65-its-time-to-apply-retirement-readiness-lessons-from-the-boomer-experience-302360086.html" target="_blank" rel="noopener">Alliance for Lifetime Income</a></span>
       </div>
     </div>
 
     <div class="two-col">
       <div class="crisis reveal">
         <h3>The campus is emptying out</h3>
-        <p>The "enrollment cliff" isn't a scare story — it's arithmetic that already happened.</p>
+        <p>The "enrollment cliff" isn't a scare story about the future — it's simple math from our recent past.</p>
         <ul>
-          <li>U.S. high school graduates <strong>peaked in 2025</strong> and decline for roughly 15 years, falling ~13% by 2041. (<a href="https://allaccess.collegeboard.org/enrollment-cliff-looming-heres-how-college-leaders-can-prepare" target="_blank" rel="noopener">WICHE / College Board</a>)</li>
-          <li>The college-age population falls ~15% between 2025–2029 — about <strong>576,000 fewer students</strong>. (<a href="https://rcstrat.com/research-and-insights/higher-education-demographic-cliff-enrollment-decline-2029" target="_blank" rel="noopener">RC Strategies</a>)</li>
-          <li>And it lands on a slide that began earlier: enrollment has been <strong>declining since 2012</strong>. (<a href="https://www.edvisorly.com/university-insights/enrollment-cliff" target="_blank" rel="noopener">Edvisorly</a>)</li>
-          <li>The result is already here: <strong>120+ colleges have closed or merged since 2016</strong>, hit hardest in the Midwest and Northeast. (<a href="https://www.synario.com/resources/blog/enrollment-cliff/" target="_blank" rel="noopener">Synario</a>)</li>
+          <li>The number of U.S. high school graduates <strong>peaked in 2025</strong> and will decline for roughly 15 years, falling ~13% by 2041. (<a href="https://allaccess.collegeboard.org/enrollment-cliff-looming-heres-how-college-leaders-can-prepare" target="_blank" rel="noopener">WICHE / College Board</a>)</li>
+          <li>The college-age population falls ~15% between 2025–2029, leaving <strong>576,000 fewer potential students</strong>. (<a href="https://rcstrat.com/research-and-insights/higher-education-demographic-cliff-enrollment-decline-2029" target="_blank" rel="noopener">RC Strategies</a>)</li>
+          <li>And this comes as enrollment has already seen a <strong>decade-long decline since 2012</strong>. (<a href="https://www.edvisorly.com/university-insights/enrollment-cliff" target="_blank" rel="noopener">Edvisorly</a>)</li>
+          <li>The result is already here: <strong>120+ colleges have closed or merged since 2016</strong>, with the Midwest and Northeast hardest hit. (<a href="https://www.synario.com/resources/blog/enrollment-cliff/" target="_blank" rel="noopener">Synario</a>)</li>
         </ul>
       </div>
       <div class="crisis reveal">
         <h3>The country is getting old all at once</h3>
         <p>The biggest generation in American history is hitting retirement in a single wave.</p>
         <ul>
-          <li>Since 2024, more than <strong>11,200 Americans turn 65 every day</strong> — over 4.1 million a year. (<a href="https://www.protectedincome.org/news/analysis-peak-65-boom/" target="_blank" rel="noopener">Alliance for Lifetime Income</a>)</li>
-          <li><strong>2025 was the absolute peak</strong> (~11,400/day), and elevated numbers hold ~20 years until Millennials start turning 65. (<a href="https://www.kiplinger.com/retirement/turning-65-key-things-to-know" target="_blank" rel="noopener">Kiplinger</a>)</li>
-          <li>This wave won't house itself: we don't have nearly enough good places to grow old with company, purpose, and dignity.</li>
+          <li>Since 2024, more than <strong>11,200 Americans have turned 65 every day</strong> — over 4.1 million a year. (<a href="https://www.cnbc.com/2024/02/08/baby-boomers-hit-peak-65-in-2024-why-retirement-age-is-in-question.html" target="_blank" rel="noopener">CNBC</a>)</li>
+          <li><strong>2025 was the absolute peak</strong> (~11,400/day), and it will be ~20 years before Millennials start turning 65. (<a href="https://www.kiplinger.com/retirement/turning-65-key-things-to-know" target="_blank" rel="noopener">Kiplinger</a>)</li>
+          <li>This population wave won't house itself: we don't have nearly enough good places to grow old with community, purpose, and dignity.</li>
         </ul>
       </div>
     </div>
@@ -362,8 +361,8 @@
 <section class="band-dark">
   <div class="wrap pullquote reveal">
     <span class="eyebrow">The once-in-history part</span>
-    <p class="big">By 2030, for the first time in American history, there will be more people over 65 <em>(about 71 million)</em> than under 18 <em>(about 68 million).</em></p>
-    <p class="src">The institutions we built for the young have spare room. The window won't be this clean again. — <a href="https://www.protectedincome.org/news/analysis-peak-65-boom/" target="_blank" rel="noopener">Alliance for Lifetime Income</a></p>
+    <p class="big">By 2030, every baby boomer will have turned 65. And by 2034, <em>for the first time in U.S. history, older Americans will outnumber children.</em></p>
+    <p class="src">It's already begun — older adults now outnumber children in 11 states and nearly half of U.S. counties. The institutions we built for the young have room to spare, but we don't have time to wait for the Baby Boomers' housing boom. — <a href="https://www.census.gov/library/stories/2019/12/by-2030-all-baby-boomers-will-be-age-65-or-older.html" target="_blank" rel="noopener">U.S. Census Bureau</a>; <a href="https://www.census.gov/newsroom/press-releases/2025/older-adults-outnumber-children.html" target="_blank" rel="noopener">2025</a></p>
   </div>
 </section>
 
@@ -372,36 +371,36 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">The Idea</span>
-      <h2>Put the surplus where the shortage is.</h2>
+      <h2>Match the surplus with the shortage.</h2>
     </div>
-    <p class="lead-line reveal" style="margin:1.4rem 0 2rem;">Let struggling and shuttered colleges become homes for the older Americans who need exactly what a campus already has.</p>
+    <p class="lead-line reveal" style="margin:1.4rem 0 2rem;">Transform struggling and shuttered colleges into communities for older Americans, who need exactly what a campus already has.</p>
     <div class="prose reveal">
-      <p>Not "build a retirement village near a university." That exists. The bigger, stranger, more urgent opportunity is to take the colleges that are <em>failing</em> — closing, merging, staring down empty dorms — and give those buildings a second life instead of a wrecking ball.</p>
+      <p>Not "build a retirement village near a university." Those exist. The bigger, stranger, more urgent opportunity is to take the colleges that are <em>struggling or failing</em> — closing, merging, staring down empty dorms — and give them a second life instead of a wrecking ball.</p>
     </div>
 
     <div class="swap">
       <div class="card reveal">
         <span class="tag">The college</span>
-        <h4>has a surplus of</h4>
+        <h4>has</h4>
         <p class="surplus">Space, dining halls, gyms, libraries, theaters, clinics, walkable grounds, a full events calendar, a sense of place — and a mission.</p>
-        <h4 style="margin-top:1.2rem;">is starving for</h4>
+        <h4 style="margin-top:1.2rem;">is looking for</h4>
         <p class="starve">People. And money.</p>
       </div>
       <div class="card reveal">
         <span class="tag">The older adult</span>
-        <h4>has a surplus of</h4>
+        <h4>has</h4>
         <p class="surplus">Money (often home equity and savings), time, and decades of accumulated skill and judgment.</p>
-        <h4 style="margin-top:1.2rem;">is starving for</h4>
+        <h4 style="margin-top:1.2rem;">is looking for</h4>
         <p class="starve">Community, purpose, walkability, things to do — and a way out of isolation.</p>
       </div>
     </div>
-    <p class="prose reveal" style="font-style:italic;color:var(--ink-soft);">Money and life flow toward the campus. Housing, community, and meaning flow back. Both arrows are real. That's why this is a deal, not a donation.</p>
+    <p class="prose reveal" style="font-style:italic;color:var(--ink-soft);">Money and vitality flow to the campus. Housing, community, and meaning flow back. Both arrows are real. That's why this is a deal, not a donation.</p>
 
     <h3 class="reveal" style="font-size:1.6rem;margin:2.6rem 0 1rem;">Two ways to do it</h3>
     <div class="models">
       <div class="model reveal">
         <h4>The full conversion</h4>
-        <p>A closing college becomes a community for people 55+. Dorms become apartments; the dining hall stays a dining hall; the gym, library, and theater were already perfect. A dying institution becomes a thriving one with a different student body.</p>
+        <p>A struggling college becomes a community for people 55+. Dorms become apartments; the dining hall stays a dining hall; the gym, library, and theater were already perfect. A dying institution becomes a thriving one with a different student body.</p>
       </div>
       <div class="model reveal">
         <h4>The hybrid campus</h4>
@@ -412,8 +411,8 @@
     <div class="prose reveal" style="margin-top:2.4rem;">
       <h3 style="font-size:1.6rem;margin:0 0 .6rem;">And yes — they can go back to college</h3>
       <p>The most-marketed-to generation in history grew up believing they'd be young forever, and "going back to college in your seventies" isn't a consolation prize — it's a flex. Audit a seminar. Use the library. Catch the student production. Mentor a sophomore. Take a <em>gap decade</em>.</p>
-      <p>We call the residents <strong>emeriti</strong>, because that's what they are: distinguished members of the institution, still on the faculty of life.</p>
-      <p style="font-family:'Fraunces',serif;font-weight:600;font-size:1.2rem;color:var(--ink);">To be clear about the priority: the learning is the amenity. The buildings are the point.</p>
+      <p>Let's call the residents <strong>emeriti</strong>, because that's what they are: distinguished members of the institution, tenured faculty at the school of life.</p>
+      <p style="font-family:'Fraunces',serif;font-weight:600;font-size:1.2rem;color:var(--ink);">To be clear about the priority: Continuing Education is an amenity. The buildings and the community are the point.</p>
     </div>
   </div>
 </section>
@@ -421,10 +420,10 @@
 <!-- ALREADY WORKING -->
 <section id="proof">
   <div class="wrap">
-    <div class="section-head reveal" style="max-width:34ch;">
+    <div class="section-head reveal" style="max-width:38ch;">
       <span class="eyebrow">Already Working</span>
-      <h2>We're not asking you to imagine this. Go visit one.</h2>
-      <p class="kick">There's even a name for it — a University-Based Retirement Community — a formal certification standard, and a directory listing <strong>80+</strong> of them. (<a href="https://www.mcknightsseniorliving.com/news/ccrc-earns-nations-first-certification-as-a-university-based-retirement-community/" target="_blank" rel="noopener">McKnight's</a>)</p>
+      <h2>We're not asking you to imagine this. Go visit one of the 80 that already exist.</h2>
+      <p class="kick">There's even a name for the concept — a University-Based Retirement Community — a formal certification standard, and a <a href="https://www.universityretirementcommunities.com" target="_blank" rel="noopener">national directory</a> listing <strong>80+</strong> of them. (<a href="https://www.mcknightsseniorliving.com/news/ccrc-earns-nations-first-certification-as-a-university-based-retirement-community/" target="_blank" rel="noopener">McKnight's</a>)</p>
     </div>
 
     <div class="reveal" style="margin-top:2rem;">
@@ -448,7 +447,7 @@
 
     <div class="newflag reveal">
       <h3>So what's actually new here?</h3>
-      <p style="margin:0;">Look closely: almost all of these are bolted onto <strong>thriving, often prestigious</strong> schools — and most are pricey, ground-up construction. (<a href="https://www.kiplinger.com/retirement/happy-retirement/is-a-university-retirement-community-right-for-you" target="_blank" rel="noopener">Kiplinger</a>) The model has been treated as a luxury for winners. We're proposing it as a rescue for the rest — and a far cheaper one, because the buildings already exist. <strong>Distressed colleges aren't the obstacle to this idea. They're the supply.</strong></p>
+      <p style="margin:0;">Look closely: almost all of these are bolted onto <strong>thriving, often prestigious</strong> schools — and most rely on pricey, ground-up construction. (<a href="https://www.kiplinger.com/retirement/happy-retirement/is-a-university-retirement-community-right-for-you" target="_blank" rel="noopener">Kiplinger</a>) The model has been treated as a luxury for winners. We're proposing it as a rescue for the rest — and a far cheaper one, because the buildings already exist. <strong>Distressed colleges aren't the obstacle to this idea. They're the supply.</strong></p>
     </div>
   </div>
 </section>
@@ -464,7 +463,7 @@
     <div class="obj reveal" style="margin-top:2rem;">
       <details class="obj">
         <summary>Isn't the "enrollment cliff" overhyped? Some colleges just posted record enrollment.</summary>
-        <div class="ans">Fair — and true. Fall 2024 actually saw an enrollment bump, and some analysts argue the cliff is overstated for the system as a whole. (<a href="https://www.synario.com/resources/blog/enrollment-cliff/" target="_blank" rel="noopener">Synario</a>; <a href="https://ctas.substack.com/p/what-demographic-cliff" target="_blank" rel="noopener">a skeptical take</a>) But two things hold regardless: the number of 18-year-olds really is falling for 15 years, and 120+ colleges have already closed or merged. You don't need a system-wide collapse for this idea to matter — you need empty buildings, and those exist by the hundreds.</div>
+        <div class="ans">Fair — and true. Fall 2024 actually saw an enrollment bump, and some analysts argue the cliff is overstated for the system as a whole. (<a href="https://www.synario.com/resources/blog/enrollment-cliff/" target="_blank" rel="noopener">Synario</a>; <a href="https://ctas.substack.com/p/what-demographic-cliff" target="_blank" rel="noopener">a skeptical take</a>) But two things hold regardless: the number of 18-year-olds really is falling for the next 15 years, and 120+ colleges have already closed or merged. You don't need a system-wide collapse for this idea to matter — you need empty buildings and rooms, and those exist by the hundreds and thousands.</div>
       </details>
       <details class="obj">
         <summary>Do older adults actually want to live around 19-year-olds?</summary>
@@ -472,7 +471,7 @@
       </details>
       <details class="obj">
         <summary>Isn't this just a nursing home with a mascot?</summary>
-        <div class="ans">No — and the distinction is the whole point. The spine is independent living for active people, on a campus built for movement and gathering, with care available as needs change. The failure mode of American aging is isolation. A campus is an anti-isolation machine.</div>
+        <div class="ans">No — and this distinction is the whole point. The spine is independent living for active people, on a campus built for mobility and community, with care available as needs change. The failure mode of American aging is isolation. A healthy campus is an anti-isolation machine.</div>
       </details>
       <details class="obj">
         <summary>What about zoning, healthcare licensing, accreditation, financing?</summary>
@@ -480,11 +479,11 @@
       </details>
       <details class="obj">
         <summary>Who pays for it?</summary>
-        <div class="ans">Often the residents do, through the same entrance-fee and monthly-fee structures that fund existing communities — which is exactly why this pencils out for a cash-strapped college. The older generation is, as a group, holding the assets. The point is to route some of that toward saving the institutions instead of bulldozing them.</div>
+        <div class="ans">Often the residents do, through the same entrance-fee and monthly-fee structures that drive existing communities — which is exactly why this pencils out for a cash-strapped college. The older generation is, as a group, holding the assets. The point is to route some of that toward saving the institutions instead of bulldozing them.</div>
       </details>
       <details class="obj">
         <summary>If it's so obvious, why isn't it happening already?</summary>
-        <div class="ans">Honestly? Because the two crises are managed by two completely different worlds — higher-ed administrators and senior-living operators — who rarely sit in the same room. This whole site is an attempt to get them to.</div>
+        <div class="ans">Honestly? Because the two crises are managed by two completely different worlds — higher-ed administrators and senior-living operators — who rarely sit in the same room. This whole site is an attempt to get them together.</div>
       </details>
     </div>
   </div>
@@ -502,22 +501,22 @@
       <div class="aud">
         <span class="who">If you run a college</span>
         <h3>Trustee · President · CFO</h3>
-        <p>You're sitting on the asset, with a duty to consider every path to survival. Repurposing isn't an admission of failure — it's a repositioning that keeps the lights on and turns a heartbreaking closure into a second founding.</p>
+        <p>You're sitting on the real estate, with a duty to consider every path to survival. Repurposing isn't an admission of failure — it's a repositioning that keeps the lights on and turns a heartbreaking closure into a second founding.</p>
         <p class="next">Next: put it on the agenda. Talk to an operator before a demolition contractor.</p>
         <div class="cta"><a href="#share" onclick="return shareIdea(event)">Share with your board →</a></div>
       </div>
       <div class="aud">
-        <span class="who">If you run senior living</span>
+        <span class="who">If you're in senior living management</span>
         <h3>Operator · Developer · Investor</h3>
-        <p>You spend fortunes building the campus experience from dirt. Hundreds of campuses already have it — at distressed prices, in towns that will roll out the red carpet to keep their college alive. First movers get the best buildings.</p>
-        <p class="next">Next: list the struggling colleges in your footprint. The deals are coming either way.</p>
+        <p>You spend fortunes building the campus experience from dirt. Hundreds of campuses already have it — at distressed prices, in towns that will roll out the red carpet to keep their college communities alive. First movers get the best buildings.</p>
+        <p class="next">Next: look at the struggling colleges in your footprint.</p>
         <div class="cta"><a href="#dispatches">Get the dispatches →</a></div>
       </div>
       <div class="aud">
         <span class="who">If you're an action-oriented older adult</span>
         <h3>You're the spark</h3>
-        <p>You might be the most important person here. You can forward this to a trustee, raise it at an alumni board, write your local college's president — or simply decide you want this for your own seventies and start asking. Movements start when people say the obvious thing out loud.</p>
-        <p class="next">Next: send this to one person who could act on it.</p>
+        <p>You might be the most important person here. You can forward this to a trustee, raise it at an alumni board meeting, write your local college's president — or simply decide you want this for your own seventies and start asking. Movements start when people say the obvious thing out loud.</p>
+        <p class="next">Next: send this to two people who could act on it.</p>
         <div class="cta"><a href="#share" onclick="return shareIdea(event)">Pass it on →</a></div>
       </div>
     </div>
@@ -535,11 +534,10 @@
     <div class="dispatch reveal" style="margin-top:2.4rem;">
       <span class="kicker">Dispatch 001 · June 2, 2026</span>
       <h3>Why this site exists</h3>
-      <p>I keep waiting for someone smarter to say this, and they haven't, so here goes.</p>
-      <p>We're about to spend the 2020s and 2030s doing two sad things at once: mourning the colleges that close, and worrying about where tens of millions of older Americans will live. I don't understand why we're not allowed to notice that one is the answer to the other.</p>
-      <p>I'm not angry about it. I'm just puzzled. The buildings are right there. The need is right there. The model already exists in 80-plus places. The only thing missing is for the people who run colleges and the people who run senior living to be in the same conversation — and for the rest of us to decide this is normal and good and overdue.</p>
+      <p>We're about to spend the 2020s and 2030s doing two sad things at once: mourning the colleges that close, and worrying about where tens of millions of older Americans will live. I don't understand why we're not allowed to notice that one problem is the solution to the other.</p>
+      <p>I'm not mad about it. I'm just puzzled. The buildings are right there. The need is right there. The model already exists in almost a hundred places. The only thing missing is for the people who run colleges and the people who run senior living to get into the same conversation — and for the rest of us to decide this is normal and good and overdue.</p>
       <p>So this is me saying it out loud, in the hope it catches. If you've read this far, you're now in on the secret. Pass it on.</p>
-      <p class="sign">— Second Year Seniors</p>
+      <p class="sign">— Trey Miller</p>
       <div class="subscribe">
         <a href="/feed.xml">Subscribe via RSS</a>
         <a href="mailto:hello@secondyearseniors.com?subject=Subscribe%20me%20to%20the%20dispatches">Subscribe by email</a>
@@ -592,7 +590,7 @@
   <div class="wrap about reveal">
     <span class="eyebrow">About</span>
     <h2>What this is.</h2>
-    <p>This is not a company, a pitch, or a thesis. It's an idea that wouldn't leave me alone.</p>
+    <p>This is not a company, a pitch, or an academic thesis. It's an idea that wouldn't leave me alone.</p>
     <p>Two of the biggest stories of our time — colleges running out of students, and a country running out of room to grow old well — are usually told as separate tragedies. Stand them next to each other and they look less like two problems and more like a key and a lock.</p>
     <p>There's no product here and nothing to buy. The goal is smaller and bigger than that: to put the idea into enough heads that someone with a campus and someone with a plan finally have the conversation. If that happens even once because of something you read here, this was worth it.</p>
     <p>If you want to argue with it, improve it, or act on it, good. That's the point.</p>
@@ -619,21 +617,21 @@
       <div>
         <h4>Peak 65 / Aging</h4>
         <ul>
-          <li><a href="https://www.protectedincome.org/peak65/" target="_blank" rel="noopener">Alliance for Lifetime Income — Peak 65 hub</a></li>
-          <li><a href="https://www.protectedincome.org/news/analysis-peak-65-boom/" target="_blank" rel="noopener">11,200/day; 71M vs 68M by 2030</a></li>
-          <li><a href="https://www.prnewswire.com/news-releases/the-us-has-reached-the-peak-of-peak-65-its-time-to-apply-retirement-readiness-lessons-from-the-boomer-experience-302360086.html" target="_blank" rel="noopener">2025 peak; elevated ~20 years</a></li>
-          <li><a href="https://www.kiplinger.com/retirement/turning-65-key-things-to-know" target="_blank" rel="noopener">Kiplinger — 2025 record (4.18M)</a></li>
-          <li><a href="https://www.cnbc.com/2024/02/08/baby-boomers-hit-peak-65-in-2024-why-retirement-age-is-in-question.html" target="_blank" rel="noopener">CNBC — Peak 65 overview</a></li>
+          <li><a href="https://www.cnbc.com/2024/02/08/baby-boomers-hit-peak-65-in-2024-why-retirement-age-is-in-question.html" target="_blank" rel="noopener">CNBC — 11,200/day, 4.1M/yr (2024–2027)</a></li>
+          <li><a href="https://www.kiplinger.com/retirement/turning-65-key-things-to-know" target="_blank" rel="noopener">Kiplinger — 2025 record (4.18M; ~11,400/day)</a></li>
+          <li><a href="https://www.prnewswire.com/news-releases/the-us-has-reached-the-peak-of-peak-65-its-time-to-apply-retirement-readiness-lessons-from-the-boomer-experience-302360086.html" target="_blank" rel="noopener">Alliance for Lifetime Income — 2025 peak; elevated ~20 years</a></li>
+          <li><a href="https://www.census.gov/library/stories/2019/12/by-2030-all-baby-boomers-will-be-age-65-or-older.html" target="_blank" rel="noopener">U.S. Census Bureau — by 2030 all boomers are 65+; outnumber children by 2034</a></li>
+          <li><a href="https://www.census.gov/newsroom/press-releases/2025/older-adults-outnumber-children.html" target="_blank" rel="noopener">U.S. Census Bureau (2025) — older adults already outnumber children in 11 states</a></li>
         </ul>
       </div>
       <div>
         <h4>University-Based Retirement Communities</h4>
         <ul>
+          <li><a href="https://www.universityretirementcommunities.com" target="_blank" rel="noopener">UniversityRetirementCommunities.com — national directory & UBRC certification</a></li>
           <li><a href="https://www.mcknightsseniorliving.com/news/ccrc-earns-nations-first-certification-as-a-university-based-retirement-community/" target="_blank" rel="noopener">McKnight's — first certified UBRC; 80+ nationwide</a></li>
           <li><a href="https://www.insidehighered.com/news/2019/01/09/high-demand-retirees-live-campus-arizona-state-university" target="_blank" rel="noopener">Inside Higher Ed — Mirabella at ASU</a></li>
           <li><a href="https://www.aarp.org/money/retirement/colleges-with-retirement-communities/" target="_blank" rel="noopener">AARP — overview and roster</a></li>
           <li><a href="https://lasellvillage.com/about/" target="_blank" rel="noopener">Lasell Village</a></li>
-          <li><a href="https://www.aplaceformom.com/caregiver-resources/articles/seniors-head-back-to-school" target="_blank" rel="noopener">A Place for Mom — Mirabella, Oak Hammock</a></li>
         </ul>
       </div>
     </div>
@@ -659,7 +657,7 @@
     <div class="share-row">
       <span class="label">Pass it on:</span>
       <a id="sh-li" href="https://www.linkedin.com/sharing/share-offsite/?url=https://secondyearseniors.com" target="_blank" rel="noopener">LinkedIn</a>
-      <a id="sh-x" href="https://twitter.com/intent/tweet?text=We've%20been%20warehousing%20our%20old%20people%20%E2%80%94%20and%20we're%20about%20to%20bulldoze%20the%20cure.&url=https://secondyearseniors.com" target="_blank" rel="noopener">X</a>
+      <a id="sh-x" href="https://twitter.com/intent/tweet?text=Why%20are%20we%20tearing%20down%20empty%20campuses%20just%20as%20the%20country%20runs%20out%20of%20room%20to%20grow%20old%3F%20Everyone%20deserves%20a%20senior%20year.&url=https://secondyearseniors.com" target="_blank" rel="noopener">X</a>
       <a id="sh-em" href="mailto:?subject=Everyone%20deserves%20a%20senior%20year&body=I%20think%20you'll%20find%20this%20idea%20worth%2090%20seconds%3A%20https%3A%2F%2Fsecondyearseniors.com" target="_blank" rel="noopener">Email</a>
       <a id="sh-cp" href="#" onclick="return copyLink(event)">Copy link</a>
     </div>
@@ -688,7 +686,7 @@
   // share button — try native share, fall back to footer share row
   function shareIdea(e){
     e.preventDefault();
-    var data={title:'Second Year Seniors',text:"We've been warehousing our old people — and we're about to bulldoze the cure.",url:(location.origin&&location.origin!=='null')?location.origin:'https://secondyearseniors.com'};
+    var data={title:'Second Year Seniors',text:"Why are we tearing down empty campuses just as the country runs out of room to grow old?",url:(location.origin&&location.origin!=='null')?location.origin:'https://secondyearseniors.com'};
     if(navigator.share){ navigator.share(data).catch(function(){}); }
     else { document.getElementById('share').scrollIntoView({behavior:'smooth'}); }
     return false;
