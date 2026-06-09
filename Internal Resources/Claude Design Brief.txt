@@ -1,0 +1,313 @@
+# SECOND YEAR SENIORS — Full Site Content
+
+> **Domain:** secondyearseniors.com (redirect: 2ndyrsrs.com)
+> **Tagline:** *Everyone deserves a senior year.*
+> **Voice:** Hopeful. A little puzzled. Deadpan-clever, never hokey. Plain-spoken, occasionally funny, serious underneath. Anonymous narrator with a clear personality: the reasonable person at the dinner party going *"wait — why aren't we doing this?"*
+> **Scope:** United States.
+> **The spine:** Repurpose underused and failing college real estate to house the largest wave of 65-year-olds in American history. Lifelong learning is a delightful amenity, not the point. The point is the buildings.
+> **In-world vocabulary:** Residents are *emeriti*. The recurring "people arriving on campus" feature is *Homecoming*. A long retirement is a *gap decade*.
+
+---
+
+## SITEMAP / STRUCTURE
+
+1. **Home** — the hook, the thesis, the two numbers, the turn.
+2. **The Collision** — the two crises, side by side, with the once-in-history stat.
+3. **The Idea** — the swap, the two models (full conversion + hybrid), what each side gives and gets.
+4. **Already Working** — precedents, with links. The model exists; we're just pointing it at the right buildings.
+5. **But Is This Real?** — the skeptic's corner. Honest answers to the obvious objections.
+6. **Get Involved** — the three audiences, each with a clear next step.
+7. **Dispatches** *(blog — launches with one post, RSS enabled)*.
+8. **The Evidence** *(white-paper library — placeholder for the serious deep-dives)*.
+9. **About** — why this site exists. The off-the-chest note.
+10. **Sources** — every stat, linked.
+
+Suggested top nav: `The Collision · The Idea · Already Working · Objections · Get Involved · Dispatches`
+Footer: `About · The Evidence · Sources · RSS · Share`
+
+---
+
+# 1. HOME
+
+## Hero
+
+# We've been warehousing our old people. And we're about to bulldoze the cure.
+
+Two enormous things are happening to America at the exact same moment, and almost nobody has noticed they fit together.
+
+Colleges are running out of students. A record number of Americans are running out of places to grow old well.
+
+One of these has empty buildings. The other needs somewhere to live.
+
+**Everyone deserves a senior year.**
+
+`[Button: See how the two fit →]`  `[Button: Share this idea]`
+
+---
+
+### The two numbers, side by side
+
+**~11,400 — Americans turning 65 every day.** We're in the largest surge of 65th birthdays in the nation's history, and it doesn't let up for about two decades. ([Alliance for Lifetime Income](https://www.protectedincome.org/peak65/))
+
+**~576,000 — college students about to disappear.** Births fell after 2008; that smaller generation is now aging out of college, and the number of 18-year-olds is dropping for the next 15 years. ([WICHE / College Board](https://allaccess.collegeboard.org/enrollment-cliff-looming-heres-how-college-leaders-can-prepare), [Nathan Grawe / AGB](https://agb.org/blog-post/impacts-of-the-enrollment-cliff-in-2025-2026/))
+
+### The turn
+
+A struggling college is, underneath the ivy, a real estate company. Dorms. Dining halls. A gym, a library, a theater, a clinic, walkable paths, and a calendar full of things to do. It is, almost exactly, the thing a good retirement community spends a fortune trying to build from scratch.
+
+So here's the puzzle we can't stop thinking about: **why are we tearing these places down — or letting them rot — at the precise moment that millions of people are looking for exactly what they offer?**
+
+That's the whole idea. Read on. It's more obvious than it sounds, and more possible than you'd think.
+
+`[Button: The Idea →]`
+
+---
+
+# 2. THE COLLISION
+
+## Two demographic freight trains, same decade, opposite directions.
+
+We tend to file both of these under "crisis" and look away. Put them next to each other and they stop looking like two problems.
+
+### Crisis one: the campus is emptying out
+
+The "enrollment cliff" isn't a scare story; it's arithmetic that already happened. When births dropped during and after the 2008 recession, the size of the future freshman class was set in stone. That class is now arriving.
+
+- The number of U.S. high school graduates **peaked in 2025** and is projected to decline for roughly the **next 15 years**, falling about **13% by 2041**. ([WICHE / College Board](https://allaccess.collegeboard.org/enrollment-cliff-looming-heres-how-college-leaders-can-prepare))
+- Economist Nathan Grawe projects the college-age population will fall about **15% between 2025 and 2029** — roughly **576,000 fewer students** — with a second decline running into the late 2030s. ([AGB](https://agb.org/blog-post/impacts-of-the-enrollment-cliff-in-2025-2026/); [RC Strategies](https://rcstrat.com/research-and-insights/higher-education-demographic-cliff-enrollment-decline-2029); Grawe, *Demographics and the Demand for Higher Education*, Johns Hopkins University Press, 2018)
+- And this lands on top of a slide that started earlier: total college enrollment has been **declining since 2012**. The cliff is hitting an already-eroding hillside. ([Edvisorly](https://www.edvisorly.com/university-insights/enrollment-cliff))
+- The result is already visible: **more than 120 U.S. colleges have closed or merged since 2016**, hit hardest in the Midwest and Northeast. ([Synario](https://www.synario.com/resources/blog/enrollment-cliff/))
+
+Each one of those closures is a campus full of housing, dining, and community infrastructure going dark.
+
+### Crisis two: the country is getting old all at once
+
+At the other end of life, the biggest generation in American history is hitting retirement age in a single, unprecedented wave.
+
+- Since 2024, more than **11,200 Americans have turned 65 every single day** — over **4.1 million a year** — up from about 10,000 a day the decade before. ([Alliance for Lifetime Income](https://www.protectedincome.org/news/analysis-peak-65-boom/))
+- **2025 was the absolute peak**, with roughly **11,400 a day**, and the elevated numbers are expected to hold for about **20 years**, until the even-larger Millennial generation starts turning 65. ([Kiplinger](https://www.kiplinger.com/retirement/turning-65-key-things-to-know); [Alliance for Lifetime Income](https://www.prnewswire.com/news-releases/the-us-has-reached-the-peak-of-peak-65-its-time-to-apply-retirement-readiness-lessons-from-the-boomer-experience-302360086.html))
+- This isn't a wave that will house itself in existing options. We don't have nearly enough good places for people to grow old with company, purpose, and dignity — and "good" usually means expensive and isolated.
+
+### The once-in-history part
+
+Here's the single sentence that should be on every policymaker's wall:
+
+> **By 2030, for the first time in American history, there will be more people over 65 (about 71 million) than under 18 (about 68 million).** ([Alliance for Lifetime Income](https://www.protectedincome.org/news/analysis-peak-65-boom/))
+
+The young are shrinking. The old are surging. The institutions we built for the young have spare room. The window where these two curves cross — where the supply and the demand line up this neatly — is now. It won't be this clean again.
+
+`[Button: So what do we do about it? →]`
+
+---
+
+# 3. THE IDEA
+
+## Put the surplus where the shortage is.
+
+The proposal in one line: **Let struggling and shuttered colleges become homes for the wave of older Americans who need exactly what a campus already has.**
+
+Not "build a retirement village near a university." That exists (more on that next). The bigger, stranger, more urgent opportunity is to take the colleges that are *failing* — the ones closing, merging, or staring down empty dorms — and give those buildings a second life instead of a wrecking ball.
+
+### Why it works in both directions
+
+This isn't charity in one direction. It's a trade where both sides are sitting on exactly what the other one lacks.
+
+**The college has a surplus of —** space, dining halls, gyms, libraries, theaters, clinics, walkable grounds, a full events calendar, a sense of place, and a mission.
+**The college is starving for —** people and money.
+
+**The older adult has a surplus of —** money (often home equity and savings), time, and decades of accumulated skill and judgment.
+**The older adult is starving for —** community, purpose, walkability, things to do, and a way out of isolation.
+
+Money and life flow toward the campus. Housing, community, and meaning flow back. Both arrows are real. That's why this is a deal, not a donation.
+
+### Two ways to do it
+
+**The full conversion.** A closing or closed college becomes a residential community for people 55+ — independent living, with options for care as people age. The dorms become apartments; the dining hall stays a dining hall; the gym, library, and theater were already perfect. A dying institution becomes a thriving one with a different student body.
+
+**The hybrid campus.** A college that's *shrinking but alive* adds older residents alongside its remaining students. Empty wings fill up. The older residents stabilize the budget; the younger students get mentors, and the campus gets the one thing a half-empty campus most lacks — life. (The data on intergenerational living is not subtle: both ends of the age range do better around each other.)
+
+### And yes — they can go back to college
+
+Here's the part that sells itself. The most-marketed-to generation in history grew up believing they'd be young forever, and "going back to college in your seventies" is not a consolation prize — it's a flex. Audit a seminar. Use the library. Catch the student production. Mentor a sophomore. Take a *gap decade*.
+
+We call the residents *emeriti*, because that's what they are: distinguished members of the institution, still on the faculty of life.
+
+To be clear about the priority: **the learning is the amenity. The buildings are the point.** Continuing education is what makes the brochure sing. Repurposing underused real estate during a demographic emergency is what makes the whole thing matter.
+
+`[Button: But does this actually work? →]`
+
+---
+
+# 4. ALREADY WORKING
+
+## We're not asking you to imagine this. Go visit one.
+
+The instinct is to assume an idea this tidy must have a catch — that nobody's tried it. They have. There's even a name for it: a **University-Based Retirement Community (UBRC)**. There's a formal certification standard for them, and a national directory now lists **more than 80** communities tied to colleges and universities. ([McKnight's Senior Living](https://www.mcknightsseniorliving.com/news/ccrc-earns-nations-first-certification-as-a-university-based-retirement-community/))
+
+A few you can look up right now:
+
+- **Mirabella at Arizona State University** (Tempe). A 20-story community right on campus. ASU's president called it ["the world's coolest dorm"](https://www.insidehighered.com/news/2019/01/09/high-demand-retirees-live-campus-arizona-state-university). Residents get a university ID, audit classes, and there's a program that houses music students among them to play together. It sold out before it was even finished. ([Inside Higher Ed](https://www.insidehighered.com/news/2019/01/09/high-demand-retirees-live-campus-arizona-state-university); [A Place for Mom](https://www.aplaceformom.com/caregiver-resources/articles/seniors-head-back-to-school))
+- **Lasell Village at Lasell University** (Newton, MA). About 225 residents on a 13-acre campus — and learning is so central that residents commit to **450 hours of education a year**. ([Lasell Village](https://lasellvillage.com/about/))
+- **Oak Hammock at the University of Florida** (Gainesville). Residents audit UF courses for free and take classes taught by university faculty. ([A Place for Mom](https://www.aplaceformom.com/caregiver-resources/articles/seniors-head-back-to-school))
+- **Kendal at Oberlin** (Ohio) and **Broadview at Purchase College, SUNY** (New York) — proof this works at small liberal-arts colleges and at public ones, not just big flagships. ([AARP](https://www.aarp.org/money/retirement/colleges-with-retirement-communities/))
+
+### So what's actually new here?
+
+Look closely and you'll notice almost all of these are bolted onto **thriving, often prestigious** schools — and most are pricey, ground-up construction. ([Kiplinger](https://www.kiplinger.com/retirement/happy-retirement/is-a-university-retirement-community-right-for-you))
+
+That's the gap. The model has been treated as a *luxury add-on for winners*. We're proposing it as a *rescue plan for the losers* — and a far cheaper one, because the buildings already exist. The distressed and shuttered colleges aren't the obstacle to this idea. They're the supply.
+
+`[Button: Okay, but I have questions →]`
+
+---
+
+# 5. BUT IS THIS REAL?
+
+## The skeptic's corner.
+
+A good idea should be able to take a punch. Here are the honest objections, answered honestly.
+
+**"Isn't the 'enrollment cliff' overhyped? Some colleges just posted record enrollment."**
+Fair — and true. Fall 2024 actually saw an enrollment *bump*, and some analysts argue the cliff is overstated for the system as a whole. ([Synario](https://www.synario.com/resources/blog/enrollment-cliff/); [skeptical take](https://ctas.substack.com/p/what-demographic-cliff)) But two things hold regardless of the macro debate: the *number of 18-year-olds* really is falling for 15 years, and **120+ colleges have already closed or merged**. You don't need a system-wide collapse for this idea to matter — you need empty buildings, and those already exist by the hundreds.
+
+**"Do older adults actually want to live around 19-year-olds?"**
+Some do, some don't — which is why there are two models. The full-conversion 55+ campus has no undergrads at all; it just inherits great bones. The hybrid is opt-in, and where it's been tried, the intergenerational mix is the selling point, not the bug.
+
+**"Isn't this just a nursing home with a mascot?"**
+No — and the distinction is the whole point. The spine is *independent* living for active people, on a campus built for movement and gathering, with care available as needs change. The failure mode of American aging is isolation. A campus is an anti-isolation machine.
+
+**"What about zoning, healthcare licensing, accreditation, financing?"**
+Real, and not trivial — converting a dorm to senior housing touches building codes, care licensing, and local zoning. But none of it is novel: 80+ existing communities have already cut these paths, and a closing college is often a town's biggest employer and proudest institution, which tends to make local officials *highly* motivated to find a yes. This is a "complicated, not impossible" problem — the kind consultants and operators solve for a living.
+
+**"Who pays for it?"**
+Often the residents do, through the same entrance-fee and monthly-fee structures that fund existing communities — which is exactly why this pencils out for a cash-strapped college. The older generation is, as a group, holding the assets. The point of this idea is to route some of that toward saving the institutions, instead of toward bulldozing them.
+
+**"If it's so obvious, why isn't it happening already?"**
+Honestly? Because the two crises are managed by two completely different worlds — higher-ed administrators and senior-living operators — who rarely sit in the same room. This whole site is an attempt to get them to.
+
+`[Button: I want to help →]`
+
+---
+
+# 6. GET INVOLVED
+
+## This only happens if the right people catch the idea. You might be one of them.
+
+### If you run a college — trustee, president, CFO
+
+You are sitting on the asset. You also have a fiduciary duty to consider every path to survival, and "managed decline toward closure" is a choice, not a fate. Repurposing isn't an admission of failure; it's a repositioning that can keep the lights on, keep the town's anchor institution alive, and turn a heartbreaking closure into a second founding.
+**Next step:** Put this on the agenda. Talk to a senior-living operator before you talk to a demolition contractor. `[Share this page with your board]`
+
+### If you run senior living — operator, developer, investor
+
+You spend enormous sums building the campus experience from dirt. There are hundreds of campuses that already have it, available at distressed prices, in towns that will roll out the red carpet to keep their college alive. The first movers here get the best buildings and write the playbook.
+**Next step:** Start a list of struggling colleges within your footprint. The deals are coming whether you lead them or not. `[Get the dispatches]`
+
+### If you're an action-oriented older adult
+
+You might be the most important person here. You're the one who can forward this to a trustee you know, raise it at an alumni board, write the letter to your local college's president, or simply decide you want this for *your* sixties and seventies and start asking for it. Movements like this don't start in boardrooms. They start when enough people say the obvious thing out loud.
+**Next step:** Send this to one person who could act on it. Then tell us what your local closing college *should* become. `[Share]` `[Tell us your idea]`
+
+---
+
+# 7. DISPATCHES *(blog)*
+
+*Short, regular notes on the idea, the data, and the colleges to watch. RSS enabled. The recurring feature — profiles of campuses that should be reborn — is called **Homecoming**.*
+
+### Launch post — "Why this site exists (and why now)"
+
+I keep waiting for someone smarter to say this, and they haven't, so here goes.
+
+We are about to spend the 2020s and 2030s doing two sad things at once: mourning the colleges that close, and worrying about where tens of millions of older Americans will live. I don't understand why we're not allowed to notice that one is the answer to the other.
+
+I'm not angry about it. I'm just puzzled. The buildings are right there. The need is right there. The model already exists in 80-plus places. The only thing missing is for the people who run colleges and the people who run senior living to be in the same conversation — and for the rest of us to decide this is normal and good and overdue.
+
+So this is me saying it out loud, in the hope it catches. If you've read this far, you're now in on the secret. Pass it on.
+
+*— Second Year Seniors*
+
+`[Subscribe via RSS]` `[Subscribe by email]`
+
+---
+
+# 8. THE EVIDENCE *(white papers — coming soon)*
+
+*This is where the serious work will live: the financial models, the conversion playbooks, the zoning and licensing maps, the case studies. Planned first titles:*
+
+- *The Distressed-Campus Conversion Model: what the numbers look like when the buildings already exist.*
+- *From Closure to Homecoming: a step-by-step playbook for a college board.*
+- *The Hybrid Campus: what the research says about intergenerational living.*
+
+`[Want to co-write one? Get in touch.]`
+
+---
+
+# 9. ABOUT
+
+## Why this site exists.
+
+This is not a company, a pitch, or a thesis. It's an idea that wouldn't leave me alone.
+
+Two of the biggest stories of our time — colleges running out of students, and a country running out of room to grow old well — are usually told as separate tragedies. Stand them next to each other and they look less like two problems and more like a key and a lock.
+
+There's no product here and nothing to buy. The goal is smaller and bigger than that: to put the idea into enough heads that someone with a campus and someone with a plan finally have the conversation. If that happens even once because of something you read here, this was worth it.
+
+If you want to argue with it, improve it, or act on it, good. That's the point.
+
+**Everyone deserves a senior year.**
+
+---
+
+# 10. SOURCES
+
+*Everything above, linked.*
+
+**The enrollment cliff**
+- WICHE projections via College Board — high school graduates peaked 2025, ~13% decline by 2041: https://allaccess.collegeboard.org/enrollment-cliff-looming-heres-how-college-leaders-can-prepare
+- AGB on Nathan Grawe's ~15% (2025–2029) projection: https://agb.org/blog-post/impacts-of-the-enrollment-cliff-in-2025-2026/
+- RC Strategies — the ~576,000 figure and the second cliff to 2039: https://rcstrat.com/research-and-insights/higher-education-demographic-cliff-enrollment-decline-2029
+- Edvisorly — enrollment declining since 2012: https://www.edvisorly.com/university-insights/enrollment-cliff
+- Synario — 120+ closures/mergers since 2016; the 2024 enrollment bump: https://www.synario.com/resources/blog/enrollment-cliff/
+- A skeptical counterpoint (the cliff is overstated): https://ctas.substack.com/p/what-demographic-cliff
+- Nathan D. Grawe, *Demographics and the Demand for Higher Education* (Johns Hopkins University Press, 2018)
+
+**Peak 65 / aging**
+- Alliance for Lifetime Income, Peak 65 hub: https://www.protectedincome.org/peak65/
+- Alliance for Lifetime Income analysis — 11,200/day; 71M over-65 vs 68M under-18 by 2030: https://www.protectedincome.org/news/analysis-peak-65-boom/
+- Alliance for Lifetime Income via PR Newswire — 2025 peak, elevated ~20 years: https://www.prnewswire.com/news-releases/the-us-has-reached-the-peak-of-peak-65-its-time-to-apply-retirement-readiness-lessons-from-the-boomer-experience-302360086.html
+- Kiplinger — 2025 record (4.18M; ~11,400/day): https://www.kiplinger.com/retirement/turning-65-key-things-to-know
+- CNBC — Peak 65 overview: https://www.cnbc.com/2024/02/08/baby-boomers-hit-peak-65-in-2024-why-retirement-age-is-in-question.html
+
+**University-based retirement communities (precedents)**
+- McKnight's Senior Living — first certified UBRC; 80+ communities nationwide: https://www.mcknightsseniorliving.com/news/ccrc-earns-nations-first-certification-as-a-university-based-retirement-community/
+- Inside Higher Ed — Mirabella at ASU, plus Lasell, Kendal, Oak Hammock: https://www.insidehighered.com/news/2019/01/09/high-demand-retirees-live-campus-arizona-state-university
+- AARP — overview and a roster (incl. Broadview/Purchase, Spires/Berry, Legacy Pointe/UCF): https://www.aarp.org/money/retirement/colleges-with-retirement-communities/
+- Lasell Village: https://lasellvillage.com/about/
+- A Place for Mom — Mirabella musicians-in-residence; Oak Hammock: https://www.aplaceformom.com/caregiver-resources/articles/seniors-head-back-to-school
+- Kiplinger — UBRC guide (mostly tied to thriving schools; cost): https://www.kiplinger.com/retirement/happy-retirement/is-a-university-retirement-community-right-for-you
+
+---
+
+# DESIGN DIRECTION / WIREFRAME NOTES
+
+*(Words, not code yet — per your "start with structure and text." When you're happy with the copy, I'll build the live HTML.)*
+
+**Overall vibe:** Collegiate, but modern editorial — think "varsity pennant meets a smart magazine," not "brochure for a retirement home." The joke is in the design too: the trappings of college (pennants, tassels, class banners, a yearbook grid) applied warmly to people in their seventies.
+
+**Palette:** A deep collegiate base (ivy green *or* navy) + a warm varsity gold/cream + lots of white space. One accent for buttons. Avoid anything pastel or "soft-focus senior brochure."
+
+**Type:** A characterful serif for headlines (a touch yearbook/collegiate), a clean modern sans for body. Big confident headlines — the copy is the design.
+
+**Imagery — the one rule that matters most:** Show *vitality*, never pity. Older people on bikes, in lecture halls, laughing in a dining hall, on a quad — doing the things students do. Never the stock "hand on a cane, gazing out a window" shot. The imagery has to earn the "Eternal Youth" hook, or the whole tone collapses.
+
+**Home layout (wireframe):**
+- Full-bleed hero: the bulldoze headline, the one-line thesis, two buttons.
+- The two big numbers as side-by-side cards (11,400/day vs. 576,000), each linking to a source.
+- The "turn" paragraph, full width, set large.
+- The crossover stat (71M > 68M) as a single pull-quote banner.
+- A three-up row teasing The Idea / Already Working / Get Involved.
+- Footer with sources, RSS, share, About.
+
+**Recurring components:** a "stat card" (number + one-line + source link); a "pull-quote banner" for the punchy lines; an "objection" accordion for the skeptic's corner; a simple "dispatch" card for the blog.
+
+**Share-ability:** Make the two-number graphic and the "bulldoze the cure" line into ready-made share images (Open Graph cards). For a meme, the shareable image *is* the front door.
