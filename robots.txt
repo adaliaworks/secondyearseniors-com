@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://secondyearseniors.com/sitemap.xml
